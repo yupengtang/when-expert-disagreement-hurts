@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Example audit card: GPT-4o-mini on the no-padding identical-rationale suite (July 2026), after dropping items with incomplete excerpts (244 of 249 paired items kept). Rationales were checked for answer direction only, and the delivered requests and exact generation times for this suite are not available. A card describes one measured setting; it does not certify others.}
+\label{tab:audit_card}
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{p{.40\linewidth}p{.55\linewidth}}
+\toprule
+Field & Recorded result \\
+\midrule
+Endpoint / collection & GPT-4o-mini / July 2026 (reported) \\
+Protocol / coverage & No padding, identical rationale; affected inputs excluded \\
+Paired items / initial accuracy & 244 / 91.8\% \\
+Expert wrong-revision / correction rates & 27.7\% / 70.0\% \\
+$P_R$ / $P_{\rm Acc}$ (pp) & +4.92 / -4.92 \\
+$P_{\rm Acc}$ [95\% item CI] (pp) & $-4.92$ [-8.61, -1.64] \\
+Expert versus stored Pass~1 (pp) & $-19.67$ [-26.23, -13.11] \\
+\bottomrule
+\end{tabular}
+\end{table}

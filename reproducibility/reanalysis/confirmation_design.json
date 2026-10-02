@@ -1,0 +1,39 @@
+{
+  "status": "deferred: author explicitly requested offline reanalysis and manuscript revision only on 2026-10-04; no paid calls authorized",
+  "prepared_date": "2026-10-04",
+  "input": "data-repair/outputs/benchmark_evidence_complete_v2.jsonl",
+  "models": ["openai/gpt-4o-mini", "openai/gpt-5.6-sol", "anthropic/claude-opus-5", "google/gemini-3.1-pro-preview"],
+  "model_rationale": "One historical anchor plus the three endpoints requested by the author. Freeze selection before calls; do not replace models based on observed effect sizes.",
+  "pass2_conditions": ["A0", "A1-answer", "A3-answer", "A1-rationale", "A3-rationale"],
+  "shared_pass1": "Generate once per item/model in the same collection window; retain the full assistant response and append exactly the same response to every Pass-2 history.",
+  "padding": "none",
+  "rationale": "Generate both target stimuli anew from v2 inputs; freeze hashes before target calls; source-blind human validation is a separate required step, not automated prefix compliance.",
+  "sampling": "Domain/label stratification, fixed source-document grouping. Pilot documents disjoint from formal test documents. Final N not frozen until pilot-based discordance, retention, and cluster-aware power calculation.",
+  "illustrative_items": 1000,
+  "target_model_calls_at_illustrative_N": 24000,
+  "primary_estimands": ["P_R_answer", "P_Acc_answer", "P_R_rationale", "P_Acc_rationale"],
+  "primary_test_family": "Four estimands per model across four models: 16 hypotheses; Holm FWER .05. Report effect sizes and uncertainty regardless of adjusted significance. Cluster-aware inference design finalized before formal data collection.",
+  "stopping_rule": "Fixed N and predeclared budget; never stop or extend to obtain significance.",
+  "decoding": "Model-specific settings fixed after independent pilot; identical within each model's branches. No silent unsupported-parameter omission, fallback models or provider changes. Record actual served model/provider and reasoning usage.",
+  "retry_rule": "Freeze before pilot; all attempts logged; no retry because an answer is unfavorable; no silent conversion of invalid answers to non-reversal.",
+  "budget_guard": "Fail closed when the next reservation would exceed the approved cap, or any billed cost is unresolved. Formal experiment requires separate approval after pilot and power analysis.",
+  "price_source": "https://openrouter.ai/api/v1/models",
+  "price_checked_date": "2026-10-04",
+  "catalog_usd_per_million_input_output": {
+    "openai/gpt-4o-mini": [0.15, 0.60],
+    "openai/gpt-5.6-sol": [2, 10],
+    "anthropic/claude-opus-5": [5, 25],
+    "google/gemini-3.1-pro-preview": [2, 12]
+  },
+  "cost_scenario": {
+    "input_tokens_per_call": 2000,
+    "billed_output_including_reasoning_tokens_per_call_range": [500, 2000],
+    "target_call_total_usd_range": [252.6, 681.0],
+    "target_calls_plus_20_percent_contingency_usd_range": [303.12, 817.2],
+    "excluded": ["pilot", "rationale generation and validation", "human annotation", "provider price changes", "long-context surcharges"],
+    "not_a_quote_or_spending_authorization": true
+  },
+  "pilot_budget_requested_usd": 50,
+  "pilot_budget_authorized_usd": 0,
+  "formal_budget_authorized_usd": 0
+}

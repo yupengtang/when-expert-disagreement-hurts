@@ -156,6 +156,8 @@ def main():
     pd.DataFrame([{"n_questions": len(differences), "n_model_item_pairs": len(wide), "P_pp": 100*differences.mean(),
                    "cluster_ci_lo": lo, "cluster_ci_hi": hi, "bootstrap_samples": 50000}]).to_csv(OUT / "pooled_cluster.csv", index=False)
     (TABLES / "pooled_ci.tex").write_text(f"{100*differences.mean():.2f} points (95\\% CI [{lo:.2f}, {hi:.2f}])")
+    # The September models share one protocol, so they are pooled with each other and not with July.
+    newer_models.pooled_clean(additional_clean).to_csv(OUT / "pooled_cluster_september.csv", index=False)
     # Report the exact complete-case sizes for current-model comparisons.
     newer_summary = newer_models.summarize(suites["sota"])
     newer_summary.to_csv(OUT / "newer_models_figure.csv", index=False)

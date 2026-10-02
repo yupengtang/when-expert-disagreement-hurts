@@ -10,9 +10,10 @@ Language models often revise an answer after another agent disagrees. We use a b
 ## Findings
 
 - On the full 1,989-item benchmark, disagreement induces substantially more revision than neutral reconsideration.
+- Revision improves accuracy only when its selectivity for initial errors exceeds the break-even ratio implied by initial accuracy. All five main-benchmark models fall short under expert disagreement; most API models would need to be three to five times more selective.
 - Expert labels have heterogeneous effects: four of five full-benchmark models show an additional 2.6–6.9 percentage-point reversal effect, while one shows a negative aggregate effect.
-- Revisions are not uniformly harmful, so the analysis reports beneficial and harmful transitions separately. Expert disagreement lowers final accuracy by 1.9–16.1 points on the full benchmark.
-- Results on four additional endpoints and an identical-rationale control confirm that the effect depends on the model and prompt protocol; they are not presented as a model ranking.
+- More reversal does not necessarily imply lower accuracy. On compatible anonymous/expert pairs, expert-label accuracy effects range from −5.2 to +2.4 points across the five main models; beneficial and harmful transitions are reported separately.
+- In the identical-rationale control, the four September models have a pooled source-label effect of +2.0 points (95% question-cluster bootstrap CI [0.7, 3.3]), although none of their individual exact tests is significant. They are pooled within their protocol, not ranked against the main five models.
 
 ## Reproduce the results
 
@@ -24,9 +25,11 @@ cd when-expert-disagreement-hurts/reproducibility
 python -m pip install -r requirements.txt
 python reproduce.py
 python make_figures.py
+python reanalysis/audit.py
+python reanalysis/render.py
 ```
 
-The reproduction script regenerates 67 CSV and LaTeX outputs from the released records. The repository [CI workflow](.github/workflows/reproduce.yml) runs the same analysis and checks the tracked numerical outputs for changes.
+These commands regenerate the historical analyses and the revised paired reversal and accuracy estimates, sensitivity checks, tables, and figures from released records. The repository [CI workflow](.github/workflows/reproduce.yml) runs both analyses and checks the tracked numerical outputs for changes. See the [analysis documentation](reproducibility/README.md) for the retrospective rules and the distinction between historical and revised estimates.
 
 All 1,989 original question–excerpt pairs are now recovered. The [input audit](reproducibility/data-repair/README.md) verifies their provenance and provides separately versioned evidence-complete inputs: 48 original Law excerpts and 16 control Law excerpts required expansion. Historical results are preserved; repaired inputs require fresh model calls and must not be paired with old outputs. The same audit corrects 96 Science question associations in an earlier reconstructed input file, without changing the original saved trial outputs.
 
@@ -40,7 +43,7 @@ The experiment loader accepts all three released input files, preserves their pr
 | [`experiment/`](experiment/) | Original experiment pipeline and frozen study materials |
 | [`docs/`](docs/) | Project-page source and paper figures |
 
-The [camera-ready release](https://github.com/yupengtang/when-expert-disagreement-hurts/releases/latest) includes the paper, preprint, LaTeX source archives, [editable Figure 1](https://github.com/yupengtang/when-expert-disagreement-hurts/releases/download/neurips-2026-camera-ready/methodology_schematic_editable.pptx), and a standalone reproduction package.
+The [camera-ready release](https://github.com/yupengtang/when-expert-disagreement-hurts/releases/latest) includes the final paper, public preprint, LaTeX source archives, [both editable architecture figures](https://github.com/yupengtang/when-expert-disagreement-hurts/releases/download/neurips-2026-camera-ready/audit-figures-editable.pptx), and a standalone reproduction package.
 
 ## Citation
 
@@ -55,4 +58,4 @@ The [camera-ready release](https://github.com/yupengtang/when-expert-disagreemen
 
 ## License
 
-The analysis code is released under the [MIT License](LICENSE). Dataset excerpts and model outputs remain subject to their original source and provider terms; no model weights are distributed. For questions, open an issue or contact Yupeng Tang at `ytang454@gatech.edu`.
+The analysis code is released under the [MIT License](LICENSE). Dataset excerpts and model outputs remain subject to their original source and provider terms; no model weights are distributed. For questions, open an issue or contact Yupeng Tang at `yupengtang@gatech.edu`.

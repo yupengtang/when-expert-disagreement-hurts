@@ -6,6 +6,9 @@ on:
     paths:
       - "docs/assets/paper.pdf"
       - "docs/assets/methodology.pdf"
+      - "docs/assets/auxiliary-diagnostics.pdf"
+      - "docs/assets/*source*"
+      - "docs/assets/neurips-2026-camera-ready.pdf"
       - "reproducibility/**"
       - ".github/release-notes.md"
       - ".github/workflows/release.yml"
@@ -36,7 +39,7 @@ jobs:
                   if path.is_file() and '__pycache__' not in path.parts and path.suffix != '.pyc':
                       archive.write(path, Path('supplementary') / path.relative_to(root))
           PY
-      - name: Update the paper, vector figure, and reproducibility package
+      - name: Update the paper, source archives, vector figures, and reproducibility package
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -44,7 +47,13 @@ jobs:
           gh release view neurips-2026-camera-ready
           gh release upload neurips-2026-camera-ready \
             docs/assets/paper.pdf \
+            docs/assets/neurips-2026-camera-ready.pdf \
+            docs/assets/arxiv-preprint.pdf \
+            docs/assets/neurips-2026-camera-ready-source.zip \
+            docs/assets/arxiv-source.tar.gz \
             docs/assets/methodology.pdf \
+            docs/assets/auxiliary-diagnostics.pdf \
+            docs/assets/audit-figures-editable.pptx \
             when-expert-disagreement-hurts-reproducibility.zip \
             --clobber
           gh release edit neurips-2026-camera-ready --notes-file .github/release-notes.md

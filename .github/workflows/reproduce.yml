@@ -47,4 +47,18 @@ jobs:
         run: git diff --exit-code -- reproducibility/rebuttal/analysis reproducibility/tables
       - name: Regenerate figures
         working-directory: reproducibility
-        run: python make_figures.py
+        run: python make_figures.py --web-output ../docs/assets
+      - name: Verify project-page figures and paired estimates
+        working-directory: reproducibility
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+        run: |
+          python -m unittest discover -s reanalysis -p 'test_*.py' -v
+          python reanalysis/audit.py
+          python reanalysis/render.py
+          python reanalysis/export_web.py --web-output ../docs/assets
+      - name: Verify revised numerical outputs and project-page figures
+        run: |
+          git diff --exit-code -- reproducibility/reanalysis/outputs/*.csv reproducibility/reanalysis/outputs/*.tex
+          git diff --exit-code -- docs/assets/results.json docs/assets/transitions.svg docs/assets/reversal.svg docs/assets/selectivity.svg

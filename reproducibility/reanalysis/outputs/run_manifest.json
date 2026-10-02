@@ -1,0 +1,9 @@
+{
+  "script_sha256": "2ef2e9bfbd987113984f27f455df7bce5582806fd3de8e4f5524bb8da9e2019f",
+  "workspace_git_commit": "edcbd80ae8f04c1193c858434e4e9ef5e7606e3e",
+  "workspace_commit_alone_does_not_identify_uncommitted_analysis": true,
+  "paper_sha256": null,
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "paid_calls": 0
+}

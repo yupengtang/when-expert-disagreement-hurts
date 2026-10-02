@@ -44,6 +44,25 @@ def summarize(frame):
     return pd.DataFrame(rows)
 
 
+def pooled_clean(frame, seed=20261104):
+    """Pool the four September no-padding contrasts, resampling questions with their model block."""
+    wide = frame.pivot(index=["question_id", "model_id"], columns="condition", values="reversal")
+    pair = wide[["A1_rat_clean", "A3_rat_clean"]].dropna().astype(float)
+    grouped = (pair.A3_rat_clean - pair.A1_rat_clean).groupby("question_id").agg(["sum", "size"])
+    total, size = grouped["sum"].to_numpy(), grouped["size"].to_numpy()
+    rng = np.random.default_rng(seed)
+    draws = []
+    for _ in range(50):
+        idx = rng.integers(0, len(total), size=(1000, len(total)))
+        draws.append(total[idx].sum(axis=1) / size[idx].sum(axis=1))
+    lo, hi = 100 * np.quantile(np.concatenate(draws), [.025, .975])
+    return pd.DataFrame([dict(n_questions=len(total), n_model_item_pairs=int(size.sum()),
+                              expert_only=int((pair.A3_rat_clean > pair.A1_rat_clean).sum()),
+                              anonymous_only=int((pair.A1_rat_clean > pair.A3_rat_clean).sum()),
+                              P_pp=100 * total.sum() / size.sum(), cluster_ci_lo=lo, cluster_ci_hi=hi,
+                              bootstrap_samples=50000, seed=seed)])
+
+
 def plot(summary, output):
     import matplotlib.pyplot as plt
     fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.6), gridspec_kw={"width_ratios": [1, 1]})

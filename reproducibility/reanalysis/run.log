@@ -1,0 +1,26 @@
+main anthropic/claude-sonnet-4 paired 1984 excluded 2
+main google/gemini-2.0-flash-001 paired 1984 excluded 3
+main meta-llama/Llama-3.1-8B-Instruct paired 1987 excluded 2
+main mistralai/Mistral-7B-Instruct-v0.3 paired 1978 excluded 4
+main openai/gpt-4o-mini paired 1986 excluded 0
+controls_api anthropic/claude-sonnet-4 paired 500 excluded 0
+controls_api google/gemini-2.5-flash paired 500 excluded 0
+controls_api openai/gpt-4o-mini paired 500 excluded 0
+controls_open meta-llama/llama-3.1-8b-instruct paired 500 excluded 0
+controls_open meta-llama/llama-3.3-70b-instruct paired 496 excluded 2
+controls_four anthropic/claude-opus-4.8 paired 249 excluded 0
+controls_four google/gemini-3.6-flash paired 213 excluded 21
+controls_four openai/gpt-5.6-terra paired 250 excluded 0
+controls_four x-ai/grok-4.5 paired 250 excluded 0
+controls_t0 anthropic/claude-sonnet-4 paired 250 excluded 0
+controls_t0 google/gemini-2.5-flash paired 250 excluded 0
+controls_t0 openai/gpt-4o-mini paired 250 excluded 0
+clean_api anthropic/claude-sonnet-4 paired 249 excluded 0
+clean_api google/gemini-2.5-flash paired 249 excluded 0
+clean_api openai/gpt-4o-mini paired 249 excluded 0
+clean_four anthropic/claude-opus-4.8 paired 248 excluded 0
+clean_four google/gemini-3.6-flash paired 207 excluded 26
+clean_four openai/gpt-5.6-terra paired 249 excluded 0
+clean_four x-ai/grok-4.5 paired 249 excluded 0
+temporal openai/gpt-4o-mini paired 224 excluded 0
+Historical files unchanged. Output: /storage/project/r-mlin91-0/ytang454/projects/Mechanistic-Calibration/camera-ready/supplementary/reanalysis/outputs

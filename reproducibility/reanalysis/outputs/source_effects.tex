@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Paired effects of the expert label on reversal and accuracy (pp), with 95\% item-bootstrap intervals (20,000 resamples), on items whose initial answers match across branches. The first five models use the main benchmark and the last four the 250-item pool. Both protocols are padded, so filler differences also enter these contrasts.}
+\label{tab:reversal}
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrcc}
+\toprule
+Model & $N$ & $P_R$ [95\% CI] & $P_{\rm Acc}$ [95\% CI] \\
+\midrule
+GPT-4o-mini & 1986 & $+6.90$ [+5.64, +8.16] & $-5.19$ [-6.50, -3.93] \\
+Claude-Sonnet-4 & 1984 & $+2.62$ [+1.31, +3.88] & $+0.30$ [-1.01, +1.61] \\
+Gemini-2.0-Flash & 1984 & $-1.86$ [-3.07, -0.66] & $+2.37$ [+1.21, +3.58] \\
+Llama-3.1-8B & 1987 & $+5.18$ [+3.27, +7.15] & $-3.77$ [-5.69, -1.81] \\
+Mistral-7B & 1978 & $+5.01$ [+3.89, +6.17] & $-0.86$ [-2.02, +0.30] \\
+\midrule
+GPT-5.6-terra & 250 & $+6.80$ [+4.00, +10.00] & $-5.20$ [-8.40, -2.00] \\
+Grok-4.5 & 250 & $+2.80$ [+0.00, +5.60] & $-2.80$ [-5.60, +0.00] \\
+Gemini-3.6-Flash & 213 & $+2.35$ [-0.47, +5.16] & $-0.47$ [-3.29, +2.35] \\
+Claude-Opus-4.8 & 249 & $-0.80$ [-2.41, +0.80] & $+0.00$ [-1.61, +1.61] \\
+\bottomrule
+\end{tabular}
+\end{table}
