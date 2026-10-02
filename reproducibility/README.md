@@ -20,6 +20,8 @@ python make_figures.py
 
 `reproduce.py` regenerates CSVs in `rebuttal/analysis/` and LaTeX tables in `tables/`. `make_figures.py` recreates the numerical main-paper and appendix figures in `figs/`, embedding TrueType fonts. Analysis takes minutes on CPU. Dependencies are pinned to the versions used for this release. No generation script is executed by these commands.
 
+The two main result figures also export SVGs with selectable text. To regenerate the project page's figures and interactive data from the same numerical source, run `python make_figures.py --web-output ../docs/assets` in a repository checkout. The reversal-direction plot uses all valid expert-labeled trials for both directions, and its net accuracy change is checked against their difference. The effect plot preserves the paired confidence intervals and separates the two prompt protocols. Changing the display does not recompute or pool the reported estimates.
+
 ## Included evidence and exclusions
 
 - Complete de-duplicated main table: `rebuttal/data/recovered/neurips_dedup_trials_FULL.csv`, 29,778 rows over five models, with parsed answers, ground truth, condition, domain and available log-odds. Assertions verify that reversal and accuracy flags agree with the stored answers.

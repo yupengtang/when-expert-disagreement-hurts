@@ -47,4 +47,6 @@ jobs:
         run: git diff --exit-code -- reproducibility/rebuttal/analysis reproducibility/tables
       - name: Regenerate figures
         working-directory: reproducibility
-        run: python make_figures.py
+        run: python make_figures.py --web-output ../docs/assets
+      - name: Verify project-page figures and paired estimates
+        run: git diff --exit-code -- docs/assets/results.json docs/assets/transitions.svg docs/assets/reversal.svg

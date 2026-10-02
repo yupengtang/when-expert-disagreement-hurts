@@ -86,60 +86,95 @@ def build(original, newer, new_summary, relative, output, tables):
 
 def plot(summary, directory):
     import matplotlib.pyplot as plt
-    y = np.array([0, 1, 2, 3, 4, 5.3, 6.3, 7.3, 8.3])
+    from matplotlib.ticker import FuncFormatter
+    summary = summary.set_index('model').loc[ORDER].reset_index()
+    y = np.array([0, 1, 2, 3, 4, 6, 7, 8, 9])
+    ink, blue, orange, green = '#263442', '#245A81', '#D55E00', '#009E73'
+    plt.rcParams.update({'svg.fonttype': 'none', 'svg.hashsalt': 'expert-audit',
+                         'text.color': ink, 'axes.labelcolor': ink,
+                         'xtick.color': ink, 'ytick.color': ink})
+
     def decorate(ax):
-        ax.set_ylim(8.9, -.7)
-        ax.axhspan(4.8, 8.9, color="#eef4fa", zorder=0)
-        ax.axhline(4.65, color=".55", linestyle="--", linewidth=.7)
-        ax.grid(axis="x", alpha=.16)
+        ax.set_ylim(9.7, -1.4)
+        ax.axhspan(5.45, 9.7, color='#F3F6F8', zorder=0)
+        ax.grid(axis='x', color='#E4E9ED', linewidth=.55)
         ax.set_axisbelow(True)
-        for side in ["top", "right", "left"]:
+        for side in ['top', 'right', 'left']:
             ax.spines[side].set_visible(False)
-        ax.tick_params(axis="y", length=0)
-    fig, ax = plt.subplots(figsize=(7.2, 3.4))
-    fig.subplots_adjust(left=.23, right=.98, top=.86, bottom=.15)
+        ax.spines['bottom'].set_color('#B6C1CB')
+        ax.tick_params(axis='y', length=0)
+        ax.tick_params(axis='x', labelsize=8, length=3)
+
+    def groups(ax):
+        for yy, label in [(-.95, '1,989-item benchmark'), (5.12, '250-item pool · different protocol')]:
+            ax.text(0, yy, label, transform=ax.get_yaxis_transform(),
+                    fontsize=7.5, color='#596976', va='center')
+
+    def save(fig, name):
+        for extension in ['pdf', 'svg']:
+            path = directory / f'{name}.{extension}'
+            metadata = {'Creator': 'Reproducible paired audit'}
+            if extension == 'svg':
+                metadata['Date'] = None
+            fig.savefig(path, metadata=metadata)
+            if extension == 'svg':
+                path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines()) + '\n')
+        plt.close(fig)
+
+    # Both directions use all valid A3 trials, not separate correctness strata.
+    fig, (ax, net) = plt.subplots(1, 2, figsize=(6.8, 3.4), sharey=True,
+                                 gridspec_kw={'width_ratios': [3.6, 1.15]})
+    fig.subplots_adjust(left=.235, right=.98, top=.85, bottom=.16, wspace=.1)
     decorate(ax)
-    left = np.zeros(9)
-    for key, label, color in [("stable_correct", "Stable correct", "#8bcf8f"),
-                              ("wrong_correct", "Wrong → Correct", "#3b6fb6"),
-                              ("correct_wrong", "Correct → Wrong", "#c73e3a"),
-                              ("stable_wrong", "Stable wrong", "#c9c9c9")]:
-        vals = summary[key].to_numpy()
-        ax.barh(y, vals, left=left, height=.62, color=color, edgecolor="white", linewidth=.4, label=label)
-        if key in ["wrong_correct", "correct_wrong"]:
-            for yy, start, value in zip(y, left, vals):
-                if value >= 3.0:
-                    ax.text(start+value/2, yy, f"{value:.1f}", ha="center", va="center", color="white", fontsize=7)
-        left += vals
-    ax.set_yticks(y, summary.model, fontsize=8)
-    ax.set_xlim(0, 100)
-    ax.set_xlabel("Share of valid expert-labeled trials (%)", fontsize=9)
-    ax.legend(frameon=False, ncol=2, loc="lower center", bbox_to_anchor=(.5, 1.01), fontsize=8)
-    fig.savefig(directory / "transition_stacked_a3.pdf")
-    plt.close(fig)
-    fig, (bars, effects) = plt.subplots(1, 2, figsize=(7.4, 3.5), gridspec_kw={"width_ratios": [2.1, 1]}, sharey=True)
-    fig.subplots_adjust(left=.23, right=.98, top=.9, bottom=.16, wspace=.08)
-    decorate(bars)
-    # Separate group shading and line also span the paired-effect panel.
-    effects.set_ylim(8.9, -.7)
-    effects.axhspan(4.8, 8.9, color="#eef4fa", zorder=0)
-    effects.axhline(4.65, color=".55", linestyle="--", linewidth=.7)
-    for offset, key, label, color in [(-.22, "A0", "Drift", "#c6dbef"), (0, "A1", "Anon", "#6baed6"), (.22, "A3", "Expert", "#08519c")]:
-        bars.barh(y+offset, summary[key], height=.21, label=label, color=color, edgecolor="black", linewidth=.2)
-    bars.set_yticks(y, summary.model, fontsize=8)
-    bars.set_xlim(0, 27)
-    bars.set_xlabel("Reversal rate (%)", fontsize=9)
-    bars.legend(frameon=False, ncol=3, loc="lower center", bbox_to_anchor=(.5, 1.01), fontsize=8)
-    effects.axvline(0, color=".4", linewidth=.8)
+    groups(ax)
+    ax.axvline(0, color='#7C8A96', linewidth=.8)
+    ax.barh(y, -summary.correct_wrong, height=.58, color=orange, label='Correct → Wrong')
+    ax.barh(y, summary.wrong_correct, height=.58, color=green, label='Wrong → Correct')
+    for yy, row in zip(y, summary.itertuples()):
+        ax.text(-row.correct_wrong-.5, yy, f'{row.correct_wrong:.1f}', va='center', ha='right', fontsize=7.6)
+        ax.text(row.wrong_correct+.5, yy, f'{row.wrong_correct:.1f}', va='center', fontsize=7.6)
+    ax.set_xlim(-25, 25)
+    ax.set_xticks([-20, -10, 0, 10, 20])
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{abs(x):g}'))
+    ax.set_yticks(y, summary.model, fontsize=8.7)
+    ax.set_xlabel('Share of valid expert-labeled trials (%)', fontsize=8.5)
+    ax.legend(frameon=False, ncol=2, loc='lower center', bbox_to_anchor=(.5, 1.015), fontsize=8,
+              handlelength=1.1, columnspacing=1.5)
+    net.set_xlim(0, 1)
+    net.axis('off')
+    net.text(.19, 1.03, 'Δ accuracy', transform=net.transAxes, ha='center', fontsize=8.3, weight='medium')
+    net.text(.19, .975, '(pp)', transform=net.transAxes, ha='center', fontsize=7.5)
+    net.text(.84, 1.03, 'Valid n', transform=net.transAxes, ha='center', fontsize=8.3)
+    for yy, row in zip(y, summary.itertuples()):
+        assert np.isclose(row.wrong_correct-row.correct_wrong, row.delta_acc)
+        net.text(.19, yy, f'{row.delta_acc:+.1f}', ha='center', va='center', fontsize=8.5)
+        net.text(.84, yy, f'{row.n_A3:,}', ha='center', va='center', fontsize=8)
+    # Keep the established filename so existing source exports remain compatible.
+    save(fig, 'transition_stacked_a3')
+
+    fig, (effects, rates) = plt.subplots(1, 2, figsize=(6.8, 3.4), sharey=True,
+                                       gridspec_kw={'width_ratios': [1.3, 1]})
+    fig.subplots_adjust(left=.235, right=.98, top=.85, bottom=.16, wspace=.2)
+    for panel in [effects, rates]:
+        decorate(panel)
+    groups(effects)
+    effects.axvline(0, color='#7C8A96', linewidth=.8)
     effects.errorbar(summary.P, y, xerr=np.vstack([summary.P-summary.P_lo, summary.P_hi-summary.P]),
-                     fmt="o", color="#08519c", markersize=3.5, capsize=2, linewidth=.8)
+                     fmt='o', color=blue, markersize=4, capsize=2.5, linewidth=1.1)
     effects.set_xlim(-5, 11)
     effects.set_xticks([-5, 0, 5, 10])
-    effects.set_xlabel(r"$P=A_3-A_1$ (pp)", fontsize=9)
-    effects.tick_params(axis="y", left=False, labelleft=False)
-    effects.grid(axis="x", alpha=.16)
-    effects.spines["left"].set_visible(False)
-    effects.spines["top"].set_visible(False)
-    effects.spines["right"].set_visible(False)
-    fig.savefig(directory / "reversal_decomposition.pdf")
-    plt.close(fig)
+    effects.set_yticks(y, summary.model, fontsize=8.7)
+    effects.set_title('Expert-label effect', fontsize=9.5, pad=11, weight='medium')
+    effects.set_xlabel('Expert − anonymous reversal (pp)', fontsize=8.5)
+    for offset, key, label, color, marker in [(-.22, 'A0', 'Drift', '#87929D', 's'),
+                                             (0, 'A1', 'Anon.', blue, 'o'),
+                                             (.22, 'A3', 'Expert', orange, '^')]:
+        rates.plot(summary[key], y+offset, linestyle='none', marker=marker, markersize=3.7,
+                   color=color, label=label)
+    rates.set_xlim(0, 27)
+    rates.set_xticks([0, 10, 20])
+    rates.set_xlabel('Reversal rate (%)', fontsize=8.5)
+    rates.tick_params(axis='y', labelleft=False)
+    rates.legend(frameon=False, ncol=3, loc='lower center', bbox_to_anchor=(.5, 1.015),
+                 fontsize=7.7, handlelength=.65, columnspacing=.7)
+    save(fig, 'reversal_decomposition')

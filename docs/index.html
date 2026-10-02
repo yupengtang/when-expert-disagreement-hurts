@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260926-academic">
+  <link rel="stylesheet" href="styles.css?v=20261002">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -39,11 +39,20 @@
 
     <section class="teaser container" id="method" aria-label="Method overview">
       <p class="teaser-summary">How much does an <strong>expert label</strong> change a model’s decision<br class="desktop-break"> when the evidence and opposing answer stay the same?</p>
+      <div class="source-comparison" aria-label="Source-wording intervention">
+        <div class="shared-context"><span class="context-label">Held fixed</span><span>Evidence</span><span>Question</span><span>Initial answer</span><span>Opposing answer</span></div>
+        <div class="source-pair">
+          <article class="source-anonymous"><h2><span>A<sub>1</sub></span> Anonymous source</h2><p>I asked another assistant the same question.<br>They answered: <span class="prompt-variable">[OPPOSITE]</span>.</p></article>
+          <article class="source-expert"><h2><span>A<sub>3</sub></span> Expert-labeled source</h2><p>I asked another assistant the same question.<br><mark>This assistant is specialized in <span class="prompt-variable">[DOMAIN]</span>.</mark><br>They answered: <span class="prompt-variable">[OPPOSITE]</span>.</p></article>
+        </div>
+        <div class="comparison-caption"><p>Source blocks from the audit prompts; shared instructions and protocol-specific filler are omitted. Brackets denote template variables, not a model response.</p><a href="#results">See the paired effects <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <h2 class="method-heading">The audit at a glance</h2>
       <figure>
         <object class="methodology-vector" data="assets/methodology.svg" type="image/svg+xml" aria-label="Two-pass branch-paired audit: one initial answer is reused across reflection, anonymous disagreement, and expert-labeled disagreement.">
           <a href="assets/methodology.pdf">View the audit protocol as a PDF</a>
         </object>
-        <figcaption><strong>Branch-paired audit.</strong> The question, evidence, and initial answer are fixed. Comparing anonymous and expert-labeled disagreement measures the incremental source-label effect; neutral reflection establishes ordinary revision without an opponent.</figcaption>
+        <figcaption><strong>Branch-paired audit.</strong> The diagram shows the five-model main benchmark. The question, evidence, and initial answer are fixed. Comparing anonymous and expert-labeled disagreement measures the incremental source-label effect; neutral reflection establishes ordinary revision without an opponent.</figcaption>
         <div class="figure-actions">
           <button type="button" data-enlarge-methodology hidden>Enlarge figure</button>
           <a href="assets/methodology.svg" target="_blank" rel="noopener">SVG</a>
@@ -86,14 +95,20 @@
           <p><strong>Transition direction matters.</strong> Expert disagreement lowers final accuracy by 1.9–16.1 points on the full benchmark, although some revisions correct initial errors.</p>
         </div>
         <figure class="result-figure">
-          <h3>Answer transitions under expert disagreement</h3>
-          <img src="assets/transitions.svg" alt="Stable correct, beneficial reversal, harmful reversal, and stable wrong outcomes for nine models" loading="lazy">
-          <figcaption><strong>Transition composition.</strong> The five full-benchmark models use 1,989 items. The four additional endpoints use a 250-item pool and a different prompt protocol. Results from the two protocols are shown separately and do not establish a cross-generation ranking. <a href="assets/paper.pdf#page=6">Paper, p. 6</a>.</figcaption>
+          <h3>When revision helps—and when it hurts</h3>
+          <img src="assets/transitions.svg" alt="Harmful reversals extend left and beneficial reversals right, with net accuracy change and valid sample counts for nine models in two protocol groups" loading="lazy">
+          <figcaption><strong>Reversal direction.</strong> Both bars use all valid expert-labeled trials as the denominator. Beneficial minus harmful reversal gives the accuracy change; unchanged decisions are not plotted. The five full-benchmark models use 1,989 items. The four additional endpoints use a 250-item pool and a different prompt protocol, so these are not cross-generation rankings. <a href="assets/paper.pdf#page=6">Paper, p. 6</a> · <a href="assets/transitions.svg">Vector figure</a>.</figcaption>
         </figure>
         <figure class="result-figure">
-          <h3>Reversal rates and paired source-label effects</h3>
-          <img src="assets/reversal.svg" alt="Reversal rates under reflection, anonymous disagreement, and expert disagreement, alongside paired expert-label effects" loading="lazy">
-          <figcaption><strong>Paired comparisons.</strong> Intervals use paired item bootstrap. Exact sample sizes and McNemar tests are reported in the paper. Endpoint, item coverage, prompt scaffold, and decoding settings must be considered when interpreting differences. <a href="assets/paper.pdf#page=7">Paper, p. 7</a>.</figcaption>
+          <h3>The additional effect of an expert label</h3>
+          <div id="effect-explorer" class="effect-explorer" hidden>
+            <div class="explorer-heading"><p>Expert − anonymous reversal <span>(percentage points)</span></p><p>Select a model to inspect its paired estimate.</p></div>
+            <div data-effect-rows></div>
+            <div class="effect-axis" aria-hidden="true"><span></span><svg><text x="6.25%" y="20" text-anchor="middle">−5</text><text x="33.59375%" y="20" text-anchor="middle">0</text><text x="60.9375%" y="20" text-anchor="middle">+5</text><text x="88.28125%" y="20" text-anchor="middle">+10</text></svg><span>pp</span></div>
+            <div class="model-detail" data-model-detail aria-live="polite" aria-atomic="true"><p>Points show paired effects; whiskers show 95% item-bootstrap intervals. The vertical line marks zero effect.</p></div>
+          </div>
+          <img class="reversal-static" src="assets/reversal.svg" alt="Paired expert-label effects with 95 percent confidence intervals, alongside reversal rates under reflection, anonymous disagreement, and expert disagreement" loading="lazy">
+          <figcaption><strong>Paired comparisons.</strong> Positive values mean more reversals with the expert label, not necessarily lower accuracy. The groups differ in items, prompt protocol, and collection settings. Exact sample sizes and McNemar tests are reported in the paper. <a href="assets/paper.pdf#page=7">Paper, p. 7</a> · <a href="assets/reversal.svg">Full vector figure</a> · <a href="assets/results.json">Plotted data</a>.</figcaption>
         </figure>
       </div>
     </section>
@@ -153,6 +168,6 @@ python make_figures.py</code></pre>
     <p data-figure-caption></p>
   </dialog>
   <div class="sr-only" role="status" data-copy-status></div>
-  <script src="script.js?v=20260926-academic"></script>
+  <script src="script.js?v=20261002"></script>
 </body>
 </html>

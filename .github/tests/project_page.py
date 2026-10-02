@@ -2,6 +2,8 @@
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+import csv
+import json
 import threading
 import unittest
 
@@ -90,7 +92,7 @@ class ProjectPageTests(unittest.TestCase):
                 self.assert_no_overflow()
                 self.assertTrue(self.page.locator("h1").is_visible())
                 self.assertEqual(self.page.locator(".publication-links a").count(), 4)
-                for image in self.page.locator("figure img").all():
+                for image in self.page.locator("figure img:visible").all():
                     image.scroll_into_view_if_needed()
                     self.page.wait_for_function(
                         "img => img.complete && img.naturalWidth > 0", arg=image.element_handle()
@@ -127,7 +129,7 @@ class ProjectPageTests(unittest.TestCase):
         ))
 
     def test_figure_zoom_and_copy_controls(self):
-        for button in self.page.locator(".figure-zoom").all():
+        for button in self.page.locator(".figure-zoom:visible").all():
             button.click()
             self.assertTrue(self.page.locator("[data-figure-image]").is_visible())
             self.page.locator("[data-close-figure]").click()
@@ -148,6 +150,42 @@ class ProjectPageTests(unittest.TestCase):
             self.assertEqual(page.locator("figure img").count(), 3)
             self.assertTrue(page.locator(".teaser object").is_visible())
             self.assertFalse(page.locator("[data-enlarge-methodology]").is_visible())
+
+    def test_paired_effect_data_and_interaction(self):
+        payload = json.loads((ROOT / 'docs/assets/results.json').read_text())
+        with (ROOT / 'reproducibility/rebuttal/analysis/core_nine_models.csv').open() as source:
+            original = {row['model']: row for row in csv.DictReader(source)}
+        self.assertEqual(len(payload['models']), 9)
+        self.assertEqual(self.page.locator('.effect-row').count(), 9)
+        self.assertEqual(self.page.locator('.effect-group').count(), 2)
+        self.assertEqual(self.page.locator('.effect-group').nth(0).locator('button').count(), 5)
+        self.assertEqual(self.page.locator('.effect-group').nth(1).locator('button').count(), 4)
+        for row in payload['models']:
+            for key, value in row.items():
+                if isinstance(value, (int, float)):
+                    self.assertAlmostEqual(value, float(original[row['model']][key]), places=10)
+                else:
+                    self.assertEqual(value, original[row['model']][key])
+            self.assertAlmostEqual(row['wrong_correct'] - row['correct_wrong'], row['delta_acc'])
+            button = self.page.locator(f'.effect-row[data-model="{row["model"]}"]')
+            button.click()
+            detail = self.page.locator('[data-model-detail]')
+            self.assertEqual(detail.locator('h4').inner_text(), row['model'])
+            self.assertIn(f'{row["n_paired"]:,}', detail.inner_text())
+            self.assertEqual(self.page.locator('.effect-row[aria-pressed="true"]').count(), 1)
+        self.page.locator('.effect-row').first.focus()
+        self.page.keyboard.press('Enter')
+        self.assertEqual(self.page.locator('[data-model-detail] h4').inner_text(), 'GPT-4o-mini')
+        for width in (1440, 390, 320):
+            self.page.set_viewport_size({'width': width, 'height': 1050})
+            self.assert_no_overflow()
+            self.page.locator('#effect-explorer').screenshot(path=str(SCREENSHOTS / f'effects-{width}.png'))
+
+    def test_data_network_failure_keeps_static_figure(self):
+        self.page.route('**/assets/results.json', lambda route: route.abort())
+        self.page.reload(wait_until='networkidle')
+        self.assertFalse(self.page.locator('#effect-explorer').is_visible())
+        self.assertTrue(self.page.locator('.reversal-static').is_visible())
 
 
 if __name__ == "__main__":
