@@ -1,0 +1,41 @@
+name: Check project page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/tests/project_page.py"
+      - ".github/workflows/project-page.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - ".github/tests/project_page.py"
+      - ".github/workflows/project-page.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install browser test dependencies
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Check layouts, figures, and copy controls
+        run: python .github/tests/project_page.py
+      - name: Save browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: project-page-screenshots
+          path: page-screenshots/
+          if-no-files-found: ignore

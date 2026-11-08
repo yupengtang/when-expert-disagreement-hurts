@@ -1,0 +1,83 @@
+{
+  "normalizers.py": {
+    "source": "scripts/collect_candidates.py",
+    "source_sha256": "63bcdb77466db3ce92680ba6408dca7c064c72984d2abd6c2104af1aaa3b3d95",
+    "stored_sha256": "63bcdb77466db3ce92680ba6408dca7c064c72984d2abd6c2104af1aaa3b3d95"
+  },
+  "original_trials.csv.gz": {
+    "source": "results/data/main_audit/neurips_dedup_trials_FULL.csv",
+    "source_sha256": "6d0e86e6f963cb50105c53bec37bdb1547e466fe959317609c0b7290e9a45660",
+    "stored_sha256": "f6eb12744336393493f3301bbb3f3905108691d69fb11b64151e0cc2338999ee"
+  },
+  "original_log.jsonl.gz": {
+    "source": "main-audit generation log of Claude-Sonnet-4 (beat_full_claude4_results.jsonl)",
+    "source_sha256": "daef6f679b1fd9731a96d5994ab8ffd059ff3c48134de2473f57512901b74477",
+    "stored_sha256": "df1126d2a5e55b8e601a486262b88d8ca6bb20d18f0cd2f9347faaf838052841"
+  },
+  "frozen_prefix.jsonl.gz": {
+    "source": "frozen_artifacts/beat_full_questions.jsonl",
+    "source_sha256": "d4a86e5801e6b98d06a1ff882fef65fb42f4b26d8d3c7850967b4959491c43ff",
+    "stored_sha256": "3d6fdfe2b778803762eac685cd98621d9b18cdb11f94f5fe051f42f9c9412b50"
+  },
+  "selection_log.jsonl.gz": {
+    "source": "frozen_artifacts/selection_log.jsonl",
+    "source_sha256": "3b4123ab3a218a1befa3b97663704851b249742e718a667715c333676cc50524",
+    "stored_sha256": "07ec24f5801d87c0a13c237f5c2a885fad3b662dc37ec24faccc44836c4ad855"
+  },
+  "prior_recovered.jsonl.gz": {
+    "source": "excerpt-keyed reconstruction of the benchmark inputs (beat_full_questions_RECOVERED.jsonl)",
+    "source_sha256": "7aa83ec8b0664f6c0a954c2a3ca6f98d4aabb11afb4751c1927ee8cc0f68a7dd",
+    "stored_sha256": "9bdc87c0cd1ed82c6941174394a4fe2d84cead1e309dc8e3e8985b5708b0a7f1"
+  },
+  "historical_controls.jsonl.gz": {
+    "source": "results/data/control_items.jsonl",
+    "source_sha256": "39dff390482f8461e4cb1de01620d05d922aaf7c5b2a3a8a1e5ed10c5caf40f0",
+    "stored_sha256": "bbaea814b1a2445a6406ae33bad2f8920838c345b53f012920d861d3f04c54d7"
+  },
+  "scifact_corpus.jsonl.gz": {
+    "source": "data/raw/scifact/data/corpus.jsonl",
+    "source_sha256": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62",
+    "stored_sha256": "ffeb2ed416e2a0df3b8ab3214a15429e2f73524f9c2d88534ae955b580888cf3"
+  },
+  "scifact_claims_train.jsonl.gz": {
+    "source": "data/raw/scifact/data/claims_train.jsonl",
+    "source_sha256": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+    "stored_sha256": "6d1ed97e5678b5f7526ee32e7e8c994a89136bc52c36fd1e5383e467c290aba3"
+  },
+  "scifact_claims_dev.jsonl.gz": {
+    "source": "data/raw/scifact/data/claims_dev.jsonl",
+    "source_sha256": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "stored_sha256": "77ee5bc7515ae45d4af87aa566f6c1093be3c4105c3e458a3a90356ab69e01e9"
+  },
+  "contract_LICENSE": {
+    "source": "data/raw/contractnli/contract-nli/LICENSE",
+    "source_sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "stored_sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+  },
+  "contract_TERMS": {
+    "source": "data/raw/contractnli/contract-nli/TERMS",
+    "source_sha256": "b86e5b9bd7d2c49fd0d60e1d0842b7f64746abc8b206451acbe9080027cc49c8",
+    "stored_sha256": "b86e5b9bd7d2c49fd0d60e1d0842b7f64746abc8b206451acbe9080027cc49c8"
+  },
+  "contract_train.json.gz": {
+    "source": "data/raw/contractnli/contract-nli/train.json",
+    "source_sha256": "dbceb356cd6203b35b27be94a5fa85e499a81c34c42c89ad53060b39f0257ba5",
+    "stored_sha256": "50d3db64645e2569d9949981b91b4d3c78159959efa0bdfa9130f1c59c98f1b7"
+  },
+  "contract_dev.json.gz": {
+    "source": "data/raw/contractnli/contract-nli/dev.json",
+    "source_sha256": "310af7d661d2ab50ee3700169cef524c75f39fb296bbf5a515c229eb0f42e68e",
+    "stored_sha256": "b45904e7740f0020d02cc344ad93821d2df5736ba58bd08e22d2dd2e4ff01fdc"
+  },
+  "contract_test.json.gz": {
+    "source": "data/raw/contractnli/contract-nli/test.json",
+    "source_sha256": "460267b56052a2dc5aead98eb35eadef9e6734d5723d37b4a9790e410f812387",
+    "stored_sha256": "76699e201eb56691f311f32915f5319cd608219e34c497ccf0ecd08c66174b8f"
+  },
+  "pubmedqa.jsonl.gz": {
+    "source": "qiaojin/PubMedQA, pqa_labeled/train, cached Arrow export",
+    "source_sha256": "8e08ecc7bbcc3ed5647dfbf43b469bbd24970c2073713a9eb5411a22d054183d",
+    "stored_sha256": "718fb6237d0b22fb35caf7ebd58b94507f11e0a7dc53531a7b22cf1369d5f5cb",
+    "records": 1000
+  }
+}

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\caption{Paired questions / distinct source documents by domain. PubMed IDs, SciFact document IDs, and ContractNLI document filenames define the clusters. Cohorts are not pooled.}
+\label{tab:document_counts}
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llccc}
+\toprule
+Model & Cohort & Medicine & Science & Law \\
+\midrule
+Claude-Sonnet-4 & main & 887/887 & 299/203 & 798/76 \\
+Gemini-2.0-Flash & main & 887/887 & 298/203 & 799/76 \\
+Llama-3.1-8B & main & 889/889 & 298/202 & 800/76 \\
+Mistral-7B & main & 879/879 & 299/203 & 800/76 \\
+GPT-4o-mini & main & 889/889 & 299/203 & 798/76 \\
+Claude-Sonnet-4 & clean\_api & 109/109 & 40/39 & 100/89 \\
+Gemini-2.5-Flash & clean\_api & 109/109 & 40/39 & 100/89 \\
+GPT-4o-mini & clean\_api & 109/109 & 40/39 & 100/89 \\
+Claude-Opus-4.8 & clean\_four & 109/109 & 39/38 & 100/89 \\
+Gemini-3.6-Flash & clean\_four & 91/91 & 27/26 & 89/79 \\
+GPT-5.6-terra & clean\_four & 109/109 & 40/39 & 100/89 \\
+Grok-4.5 & clean\_four & 109/109 & 40/39 & 100/89 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,3 @@
+model,n_paired,prestige_effect_disagreement_pp,prestige_effect_agreement_pp,interaction_pp,interaction_paired_boot_ci_lo_pp,interaction_paired_boot_ci_hi_pp
+meta-llama/llama-3.1-8b-instruct,498,8.03,-10.24,18.27,11.04,25.3
+meta-llama/llama-3.3-70b-instruct,495,2.42,-0.2,2.63,0.81,4.44

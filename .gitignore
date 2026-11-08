@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Credentials for the experiment code
+.env
+.env.local
+
+# Outputs written by the experiment code and local model caches
+reproducibility/runs/
+.hf_cache/
+
+# Browser test screenshots
+/page-screenshots/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

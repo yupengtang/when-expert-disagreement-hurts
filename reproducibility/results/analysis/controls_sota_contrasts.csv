@@ -1,0 +1,49 @@
+model,contrast,meaning,n_paired,rate_hi,rate_lo,diff_pp,discordant_hi_only,discordant_lo_only,mcnemar_p
+anthropic/claude-opus-4.8,A3 - A1,prestige increment P (expert vs anonymous),249,0.0281,0.0361,-0.8,1,3,0.625
+anthropic/claude-opus-4.8,A3 - A2,expert vs low-prestige,249,0.0281,0.0281,0.0,1,1,1.0
+anthropic/claude-opus-4.8,A3 - A4,expert vs neutral metadata,249,0.0281,0.0281,0.0,1,1,1.0
+anthropic/claude-opus-4.8,A4 - A1,neutral metadata vs bare anonymous,249,0.0281,0.0361,-0.8,2,4,0.6875
+anthropic/claude-opus-4.8,A2 - A4,low-prestige vs neutral metadata,249,0.0281,0.0281,0.0,2,2,1.0
+anthropic/claude-opus-4.8,A1 - A0,disagreement sensitivity G,249,0.0361,0.0281,0.8,3,1,0.625
+anthropic/claude-opus-4.8,A3_agree - A3,expert agreement vs expert disagreement,249,0.0402,0.0281,1.2,4,1,0.375
+anthropic/claude-opus-4.8,A3_agree - A0,expert agreement vs neutral reflection,249,0.0402,0.0281,1.2,5,2,0.453125
+anthropic/claude-opus-4.8,A3_agree - A1_agree,prestige effect within agreement,249,0.0402,0.0643,-2.41,1,7,0.0703125
+anthropic/claude-opus-4.8,A3g - A3,evidence gate on bare expert disagreement,249,0.0281,0.0281,0.0,2,2,1.0
+anthropic/claude-opus-4.8,A3_rat - A3,padded expert+rationale prompt package vs answer-only,247,0.0364,0.0283,0.81,6,4,0.75390625
+anthropic/claude-opus-4.8,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,247,0.085,0.0364,4.86,14,2,0.004180908203125
+google/gemini-3.6-flash,A3 - A1,prestige increment P (expert vs anonymous),213,0.0516,0.0282,2.35,7,2,0.1796875
+google/gemini-3.6-flash,A3 - A2,expert vs low-prestige,220,0.0455,0.0182,2.73,6,0,0.03125
+google/gemini-3.6-flash,A3 - A4,expert vs neutral metadata,218,0.0505,0.0275,2.29,8,3,0.2265625
+google/gemini-3.6-flash,A4 - A1,neutral metadata vs bare anonymous,213,0.0282,0.0235,0.47,4,3,1.0
+google/gemini-3.6-flash,A2 - A4,low-prestige vs neutral metadata,221,0.0181,0.0271,-0.9,2,4,0.6875
+google/gemini-3.6-flash,A1 - A0,disagreement sensitivity G,211,0.0284,0.0284,0.0,3,3,1.0
+google/gemini-3.6-flash,A3_agree - A3,expert agreement vs expert disagreement,216,0.0139,0.0463,-3.24,0,7,0.015625
+google/gemini-3.6-flash,A3_agree - A0,expert agreement vs neutral reflection,215,0.014,0.0279,-1.4,3,6,0.5078125
+google/gemini-3.6-flash,A3_agree - A1_agree,prestige effect within agreement,212,0.0142,0.0094,0.47,3,2,1.0
+google/gemini-3.6-flash,A3g - A3,evidence gate on bare expert disagreement,213,0.0235,0.0516,-2.82,1,7,0.0703125
+google/gemini-3.6-flash,A3_rat - A3,padded expert+rationale prompt package vs answer-only,207,0.0628,0.0531,0.97,6,4,0.75390625
+google/gemini-3.6-flash,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,190,0.0842,0.0579,2.63,7,2,0.1796875
+openai/gpt-5.6-terra,A3 - A1,prestige increment P (expert vs anonymous),250,0.136,0.068,6.8,17,0,1.52587890625e-05
+openai/gpt-5.6-terra,A3 - A2,expert vs low-prestige,250,0.136,0.072,6.4,20,4,0.001543879508972168
+openai/gpt-5.6-terra,A3 - A4,expert vs neutral metadata,250,0.136,0.1,3.6,13,4,0.049041748046875
+openai/gpt-5.6-terra,A4 - A1,neutral metadata vs bare anonymous,250,0.1,0.068,3.2,10,2,0.03857421875
+openai/gpt-5.6-terra,A2 - A4,low-prestige vs neutral metadata,250,0.072,0.1,-2.8,3,10,0.09228515625
+openai/gpt-5.6-terra,A1 - A0,disagreement sensitivity G,250,0.068,0.056,1.2,9,6,0.60723876953125
+openai/gpt-5.6-terra,A3_agree - A3,expert agreement vs expert disagreement,250,0.048,0.136,-8.8,3,25,2.744048833847046e-05
+openai/gpt-5.6-terra,A3_agree - A0,expert agreement vs neutral reflection,250,0.048,0.056,-0.8,5,7,0.7744140625
+openai/gpt-5.6-terra,A3_agree - A1_agree,prestige effect within agreement,250,0.048,0.096,-4.8,3,15,0.007537841796875
+openai/gpt-5.6-terra,A3g - A3,evidence gate on bare expert disagreement,250,0.108,0.136,-2.8,5,12,0.143463134765625
+openai/gpt-5.6-terra,A3_rat - A3,padded expert+rationale prompt package vs answer-only,249,0.1044,0.1365,-3.21,4,12,0.076812744140625
+openai/gpt-5.6-terra,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,249,0.1084,0.1044,0.4,4,3,1.0
+x-ai/grok-4.5,A3 - A1,prestige increment P (expert vs anonymous),250,0.08,0.052,2.8,10,3,0.09228515625
+x-ai/grok-4.5,A3 - A2,expert vs low-prestige,250,0.08,0.044,3.6,12,3,0.03515625
+x-ai/grok-4.5,A3 - A4,expert vs neutral metadata,250,0.08,0.056,2.4,8,2,0.109375
+x-ai/grok-4.5,A4 - A1,neutral metadata vs bare anonymous,250,0.056,0.052,0.4,7,6,1.0
+x-ai/grok-4.5,A2 - A4,low-prestige vs neutral metadata,250,0.044,0.056,-1.2,3,6,0.5078125
+x-ai/grok-4.5,A1 - A0,disagreement sensitivity G,250,0.052,0.016,3.6,11,2,0.0224609375
+x-ai/grok-4.5,A3_agree - A3,expert agreement vs expert disagreement,250,0.008,0.08,-7.2,0,18,7.62939453125e-06
+x-ai/grok-4.5,A3_agree - A0,expert agreement vs neutral reflection,250,0.008,0.016,-0.8,1,3,0.625
+x-ai/grok-4.5,A3_agree - A1_agree,prestige effect within agreement,250,0.008,0.016,-0.8,1,3,0.625
+x-ai/grok-4.5,A3g - A3,evidence gate on bare expert disagreement,250,0.04,0.08,-4.0,1,11,0.00634765625
+x-ai/grok-4.5,A3_rat - A3,padded expert+rationale prompt package vs answer-only,249,0.1205,0.0803,4.02,17,7,0.06391465663909912
+x-ai/grok-4.5,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,249,0.1044,0.1205,-1.61,4,8,0.3876953125

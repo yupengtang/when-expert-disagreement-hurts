@@ -1,0 +1,5 @@
+model,stratum,n_paired,rev_A3,rev_A3g,rev_A3_rat,rev_A3_rat_gated,gate_effect_pp,gate_mcnemar_p
+meta-llama/llama-3.1-8b-instruct,Pass-1 wrong: target matches benchmark label,122,0.4508,0.4262,0.7213,0.5656,-15.57,0.014453833533827731
+meta-llama/llama-3.1-8b-instruct,Pass-1 correct: target conflicts with benchmark label,376,0.2181,0.1968,0.367,0.2979,-6.91,0.034235661873195294
+meta-llama/llama-3.3-70b-instruct,Pass-1 wrong: target matches benchmark label,53,0.2264,0.1887,0.6981,0.5849,-11.32,0.109375
+meta-llama/llama-3.3-70b-instruct,Pass-1 correct: target conflicts with benchmark label,440,0.0591,0.0477,0.4023,0.35,-5.23,0.0001168418675661087

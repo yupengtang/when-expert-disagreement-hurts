@@ -1,0 +1,721 @@
+{
+  "created_utc": "2026-09-26T07:27:14.121004+00:00",
+  "budget_usd": 50,
+  "input_sha256": {
+    "results/data/controls_sota.jsonl": "1cc481b928d62af2ba1ccda342d097b43136b85289d520e1cc54a71182d94adc",
+    "results/data/control_items.jsonl": "39dff390482f8461e4cb1de01620d05d922aaf7c5b2a3a8a1e5ed10c5caf40f0",
+    "results/data/opponent_rationales.json": "37b4ee0466ce19ce680a0e4ec465451673df47f3b967d34dc8420a6db3d46eb3"
+  },
+  "catalog": {
+    "google/gemini-3.6-flash": {
+      "id": "google/gemini-3.6-flash",
+      "canonical_slug": "google/gemini-3.6-flash-20260721",
+      "hugging_face_id": null,
+      "name": "Google: Gemini 3.6 Flash",
+      "created": 1784646733,
+      "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+file+audio+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/google/gemini-3.6-flash-20260721/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [
+          {
+            "arena": "agents",
+            "category": "agenticgamedev",
+            "elo": 1180,
+            "win_rate": 47.8,
+            "rank": 13
+          },
+          {
+            "arena": "agents",
+            "category": "androidnative",
+            "elo": 1216,
+            "win_rate": 53.6,
+            "rank": 11
+          },
+          {
+            "arena": "agents",
+            "category": "fullstack",
+            "elo": 1179,
+            "win_rate": 44.2,
+            "rank": 21
+          },
+          {
+            "arena": "agents",
+            "category": "htmlslides",
+            "elo": 1152,
+            "win_rate": 41.9,
+            "rank": 17
+          },
+          {
+            "arena": "agents",
+            "category": "mobileapps",
+            "elo": 1227,
+            "win_rate": 51,
+            "rank": 14
+          },
+          {
+            "arena": "agents",
+            "category": "python-pptxslides",
+            "elo": 1146,
+            "win_rate": 38.8,
+            "rank": 24
+          },
+          {
+            "arena": "agents",
+            "category": "webapps",
+            "elo": 1200,
+            "win_rate": 45.5,
+            "rank": 22
+          },
+          {
+            "arena": "models",
+            "category": "3d",
+            "elo": 1297,
+            "win_rate": 53.2,
+            "rank": 17
+          },
+          {
+            "arena": "models",
+            "category": "asciiart",
+            "elo": 1289,
+            "win_rate": 56.7,
+            "rank": 6
+          },
+          {
+            "arena": "models",
+            "category": "codecategories",
+            "elo": 1299,
+            "win_rate": 53.6,
+            "rank": 14
+          },
+          {
+            "arena": "models",
+            "category": "dataviz",
+            "elo": 1306,
+            "win_rate": 53.4,
+            "rank": 10
+          },
+          {
+            "arena": "models",
+            "category": "gamedev",
+            "elo": 1278,
+            "win_rate": 51.1,
+            "rank": 24
+          },
+          {
+            "arena": "models",
+            "category": "uicomponent",
+            "elo": 1310,
+            "win_rate": 55,
+            "rank": 12
+          },
+          {
+            "arena": "models",
+            "category": "website",
+            "elo": 1308,
+            "win_rate": 55.5,
+            "rank": 10
+          }
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 34,
+          "coding_index": 69.2,
+          "agentic_index": 29
+        }
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    "openai/gpt-5.6-terra": {
+      "id": "openai/gpt-5.6-terra",
+      "canonical_slug": "openai/gpt-5.6-terra-20260709",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-5.6 Terra",
+      "created": 1783590857,
+      "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic...",
+      "context_length": 1050000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000012",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000018",
+            "input_cache_read": "0.0000004",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": "2026-02-16",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-5.6-terra-20260709/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 42.1,
+          "coding_index": 76.7,
+          "agentic_index": 43.2
+        }
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "none"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    "x-ai/grok-4.5": {
+      "id": "x-ai/grok-4.5",
+      "canonical_slug": "x-ai/grok-4.5-20260708",
+      "hugging_face_id": null,
+      "name": "SpaceXAI: Grok 4.5",
+      "created": 1783523154,
+      "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
+      "context_length": 500000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Grok",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000003",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000012",
+            "input_cache_read": "0.0000006"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 500000,
+        "max_completion_tokens": 450000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/x-ai/grok-4.5-20260708/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [
+          {
+            "arena": "agents",
+            "category": "agenticgamedev",
+            "elo": 1235,
+            "win_rate": 55.9,
+            "rank": 6
+          },
+          {
+            "arena": "agents",
+            "category": "androidnative",
+            "elo": 1250,
+            "win_rate": 64,
+            "rank": 7
+          },
+          {
+            "arena": "agents",
+            "category": "fullstack",
+            "elo": 1248,
+            "win_rate": 60.8,
+            "rank": 10
+          },
+          {
+            "arena": "agents",
+            "category": "godotgamedev",
+            "elo": 1227,
+            "win_rate": 57.9,
+            "rank": 11
+          },
+          {
+            "arena": "agents",
+            "category": "htmlslides",
+            "elo": 1208,
+            "win_rate": 52.5,
+            "rank": 6
+          },
+          {
+            "arena": "agents",
+            "category": "mobileapps",
+            "elo": 1243,
+            "win_rate": 53.1,
+            "rank": 9
+          },
+          {
+            "arena": "agents",
+            "category": "python-pptxslides",
+            "elo": 1230,
+            "win_rate": 53.9,
+            "rank": 12
+          },
+          {
+            "arena": "agents",
+            "category": "webapps",
+            "elo": 1221,
+            "win_rate": 53.5,
+            "rank": 16
+          },
+          {
+            "arena": "models",
+            "category": "3d",
+            "elo": 1282,
+            "win_rate": 50.5,
+            "rank": 22
+          },
+          {
+            "arena": "models",
+            "category": "asciiart",
+            "elo": 1261,
+            "win_rate": 54.1,
+            "rank": 15
+          },
+          {
+            "arena": "models",
+            "category": "codecategories",
+            "elo": 1286,
+            "win_rate": 51.2,
+            "rank": 19
+          },
+          {
+            "arena": "models",
+            "category": "dataviz",
+            "elo": 1281,
+            "win_rate": 49.7,
+            "rank": 19
+          },
+          {
+            "arena": "models",
+            "category": "gamedev",
+            "elo": 1280,
+            "win_rate": 49.6,
+            "rank": 21
+          },
+          {
+            "arena": "models",
+            "category": "svg",
+            "elo": 1232,
+            "win_rate": 48.7,
+            "rank": 17
+          },
+          {
+            "arena": "models",
+            "category": "uicomponent",
+            "elo": 1285,
+            "win_rate": 51.6,
+            "rank": 21
+          },
+          {
+            "arena": "models",
+            "category": "website",
+            "elo": 1290,
+            "win_rate": 53,
+            "rank": 18
+          }
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 38.8,
+          "coding_index": 72.4,
+          "agentic_index": 41.2
+        }
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "high"
+      }
+    },
+    "anthropic/claude-opus-4.8": {
+      "id": "anthropic/claude-opus-4.8",
+      "canonical_slug": "anthropic/claude-4.8-opus-20260528",
+      "hugging_face_id": null,
+      "name": "Anthropic: Claude Opus 4.8",
+      "created": 1779905091,
+      "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000005",
+        "completion": "0.000025",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000005",
+        "input_cache_write": "0.00000625",
+        "input_cache_write_1h": "0.00001"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/anthropic/claude-4.8-opus-20260528/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [
+          {
+            "arena": "agents",
+            "category": "agenticgamedev",
+            "elo": 1238,
+            "win_rate": 55.8,
+            "rank": 4
+          },
+          {
+            "arena": "agents",
+            "category": "agentichtmlslides",
+            "elo": 1227,
+            "win_rate": 55.6,
+            "rank": 3
+          },
+          {
+            "arena": "agents",
+            "category": "agenticslides",
+            "elo": 1294,
+            "win_rate": 64.8,
+            "rank": 1
+          },
+          {
+            "arena": "agents",
+            "category": "agenticslides(html)",
+            "elo": 1230,
+            "win_rate": 56,
+            "rank": 3
+          },
+          {
+            "arena": "agents",
+            "category": "agenticslides(python-pptx)",
+            "elo": 1310,
+            "win_rate": 68.9,
+            "rank": 1
+          },
+          {
+            "arena": "agents",
+            "category": "androidnative",
+            "elo": 1246,
+            "win_rate": 56.3,
+            "rank": 8
+          },
+          {
+            "arena": "agents",
+            "category": "fullstack",
+            "elo": 1248,
+            "win_rate": 55.2,
+            "rank": 9
+          },
+          {
+            "arena": "agents",
+            "category": "godotgamedev",
+            "elo": 1230,
+            "win_rate": 55.5,
+            "rank": 10
+          },
+          {
+            "arena": "agents",
+            "category": "htmlslides",
+            "elo": 1223,
+            "win_rate": 58,
+            "rank": 4
+          },
+          {
+            "arena": "agents",
+            "category": "mobileapps",
+            "elo": 1252,
+            "win_rate": 56.4,
+            "rank": 8
+          },
+          {
+            "arena": "agents",
+            "category": "pptxslides",
+            "elo": 1306,
+            "win_rate": 67.9,
+            "rank": 1
+          },
+          {
+            "arena": "agents",
+            "category": "python-pptxslides",
+            "elo": 1298,
+            "win_rate": 65.9,
+            "rank": 2
+          },
+          {
+            "arena": "agents",
+            "category": "webapps",
+            "elo": 1236,
+            "win_rate": 51.6,
+            "rank": 12
+          },
+          {
+            "arena": "models",
+            "category": "3d",
+            "elo": 1246,
+            "win_rate": 52.2,
+            "rank": 33
+          },
+          {
+            "arena": "models",
+            "category": "asciiart",
+            "elo": 1288,
+            "win_rate": 62.5,
+            "rank": 8
+          },
+          {
+            "arena": "models",
+            "category": "codecategories",
+            "elo": 1262,
+            "win_rate": 52.8,
+            "rank": 31
+          },
+          {
+            "arena": "models",
+            "category": "dataviz",
+            "elo": 1249,
+            "win_rate": 53,
+            "rank": 30
+          },
+          {
+            "arena": "models",
+            "category": "gamedev",
+            "elo": 1277,
+            "win_rate": 53.3,
+            "rank": 26
+          },
+          {
+            "arena": "models",
+            "category": "svg",
+            "elo": 1201,
+            "win_rate": 51.8,
+            "rank": 25
+          },
+          {
+            "arena": "models",
+            "category": "uicomponent",
+            "elo": 1263,
+            "win_rate": 53.7,
+            "rank": 30
+          },
+          {
+            "arena": "models",
+            "category": "website",
+            "elo": 1264,
+            "win_rate": 53.2,
+            "rank": 33
+          }
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 41.8,
+          "coding_index": 74.3,
+          "agentic_index": 41.9
+        }
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "high"
+      }
+    }
+  },
+  "conditions": [
+    "A1_rat_clean",
+    "A3_rat_clean",
+    "A3_rat_gated_clean"
+  ],
+  "requested_temperature": 0.7,
+  "requested_top_p": 1.0,
+  "max_tokens": 600,
+  "automatic_retries": 0,
+  "selection": "First 250 items; existing valid Pass-1; direction-compliant rationale.",
+  "historical_pass1": true,
+  "padding_policy": "none"
+}

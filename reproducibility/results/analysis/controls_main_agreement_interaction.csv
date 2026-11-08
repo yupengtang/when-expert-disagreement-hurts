@@ -1,0 +1,4 @@
+model,n_paired,prestige_effect_disagreement_pp,prestige_effect_agreement_pp,interaction_pp,interaction_paired_boot_ci_lo_pp,interaction_paired_boot_ci_hi_pp
+anthropic/claude-sonnet-4,500,0.4,-0.6,1.0,-1.0,3.0
+google/gemini-2.5-flash,500,-0.2,0.2,-0.4,-3.0,2.2
+openai/gpt-4o-mini,500,4.4,0.0,4.4,2.2,6.8

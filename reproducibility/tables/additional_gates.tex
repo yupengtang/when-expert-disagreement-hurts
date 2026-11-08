@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\caption{Evidence-gate comparisons for the four additional models. Rates are paired reversal percentages; differences are percentage points and $p$ is exact McNemar. Padding changes with the gate, so these are prompt-package comparisons, not isolated gate effects.}
+\label{tab:additional_gates}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrcccc}
+\toprule
+Model & Context & $N$ & No gate & Gate & $\Delta$ (pp) & $p$ \\
+\midrule
+GPT-5.6-terra & Answer only & 250 & 13.6 & 10.8 & $-2.80$ & 0.14 \\
+GPT-5.6-terra & Rationale & 249 & 10.4 & 10.8 & $+0.40$ & 1.00 \\
+Grok-4.5 & Answer only & 250 & 8.0 & 4.0 & $-4.00$ & 0.006 \\
+Grok-4.5 & Rationale & 249 & 12.0 & 10.4 & $-1.61$ & 0.39 \\
+Gemini-3.6-Flash & Answer only & 213 & 5.2 & 2.4 & $-2.82$ & 0.070 \\
+Gemini-3.6-Flash & Rationale & 190 & 5.8 & 8.4 & $+2.63$ & 0.18 \\
+Claude-Opus-4.8 & Answer only & 249 & 2.8 & 2.8 & $+0.00$ & 1.00 \\
+Claude-Opus-4.8 & Rationale & 247 & 3.6 & 8.5 & $+4.86$ & 0.004 \\
+\bottomrule
+\end{tabular}
+\end{table}

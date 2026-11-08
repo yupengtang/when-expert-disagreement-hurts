@@ -1,0 +1,21 @@
+model,stratum_type,stratum,n_paired,A1_reversal,A3_reversal,P_pp,ci_lo_pp,ci_hi_pp,mcnemar_p
+Claude-Sonnet-4,initial answer,pass1=Yes,1137,0.3298,0.3448,1.5,-2.39,5.37,0.15212086696675978
+Claude-Sonnet-4,initial answer,pass1=No,847,0.0519,0.0933,4.13,1.67,6.64,1.7716986633331544e-07
+Claude-Sonnet-4,true label,ground_truth=Yes,1374,0.2766,0.3071,3.06,-0.34,6.45,0.0009661330574741896
+Claude-Sonnet-4,true label,ground_truth=No,610,0.0639,0.0803,1.64,-1.29,4.59,0.021270751953125
+GPT-4o-mini,initial answer,pass1=Yes,1214,0.168,0.2669,9.88,6.62,13.13,3.1472085373995304e-26
+GPT-4o-mini,initial answer,pass1=No,772,0.0311,0.0531,2.2,0.19,4.28,0.0009105205535888672
+GPT-4o-mini,true label,ground_truth=Yes,1377,0.1365,0.2302,9.37,6.49,12.23,3.460547917825512e-27
+GPT-4o-mini,true label,ground_truth=No,609,0.0657,0.0788,1.31,-1.62,4.27,0.021484375
+Gemini-2.0-Flash,initial answer,pass1=Yes,1344,0.1845,0.1436,-4.09,-6.89,-1.29,4.693404946065792e-07
+Gemini-2.0-Flash,initial answer,pass1=No,640,0.0266,0.0547,2.81,0.64,5.08,0.001430906355381012
+Gemini-2.0-Flash,true label,ground_truth=Yes,1375,0.1564,0.1316,-2.47,-5.1,0.15,0.0020493292522852594
+Gemini-2.0-Flash,true label,ground_truth=No,609,0.0821,0.0772,-0.49,-3.57,2.58,0.7283324808813632
+Llama-3.1-8B,initial answer,pass1=Yes,1539,0.1787,0.2203,4.16,1.34,6.98,0.0001483516572976322
+Llama-3.1-8B,initial answer,pass1=No,448,0.192,0.279,8.71,3.15,14.2,0.0002718177522028418
+Llama-3.1-8B,true label,ground_truth=Yes,1379,0.1204,0.1697,4.93,2.31,7.56,1.3478026017539748e-05
+Llama-3.1-8B,true label,ground_truth=No,609,0.3202,0.3793,5.91,0.55,11.22,0.004113298503347465
+Mistral-7B,initial answer,pass1=Yes,1369,0.0986,0.1191,2.05,-0.29,4.39,0.0003069470155465659
+Mistral-7B,initial answer,pass1=No,609,0.202,0.3186,11.66,6.74,16.5,1.0078897978938123e-18
+Mistral-7B,true label,ground_truth=Yes,1375,0.0858,0.1185,3.27,1.01,5.55,1.0136448982171495e-07
+Mistral-7B,true label,ground_truth=No,603,0.2322,0.3217,8.96,3.91,13.94,2.5917592724744587e-13

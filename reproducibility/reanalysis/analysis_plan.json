@@ -1,0 +1,16 @@
+{
+  "version": "paired-audit-v2-20261004",
+  "status": "retrospective analysis; not a preregistration of previously unseen outcomes",
+  "seed": 20261004,
+  "bootstrap_samples": 20000,
+  "interval": "two-sided 95% percentile; exact McNemar tests reported separately, exploratory and unadjusted",
+  "duplicate_policy": "Within each immutable cohort, endpoint, item and condition, retain the first serialized record BEFORE checking validity. Never select a later parseable or favorable answer. Previously deduplicated inputs cannot reconstruct upstream retry selection.",
+  "pair_policy": "Require valid binary outputs, identical initial labels and ground truth, correct opponent direction where logged, identical known Pass-1 IDs, identical normalized full requests where available. Missing provenance remains unverified, never imputed as a historical record identifier.",
+  "request_normalization": "Remove only the expert source-description sentence from the expert request. Compare all remaining messages and request fields byte-for-byte after canonical JSON serialization. Compare recorded served model and provider where both are available.",
+  "sensitivity_sets": ["historical", "exclude_known_incomplete", "medicine_science"],
+  "cluster_policy": "Resample source documents with replacement within each domain, preserving all questions in each document and fixed original domain weights. No cross-model pooling is performed.",
+  "missingness": "Invalid outputs are not non-reversals. Report complete cases and worst-case bounded pair differences on observed eligible candidate pairs; absent historical attempted records remain unknown.",
+  "rationale_policy": "Saved stimulus hashes are reconstructable references, not proof of delivered prompts. Only retained full requests can verify identical delivered rationale/context.",
+  "new_model_calls": 0,
+  "historical_outputs": "read-only; all revised estimates go in a separate directory"
+}

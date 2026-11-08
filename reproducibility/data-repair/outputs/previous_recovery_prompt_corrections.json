@@ -1,0 +1,674 @@
+[
+  {
+    "question_id": "q0900",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: A diminished ovarian reserve does not solely indicate infertility in an a priori non-infertile population.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: A diminished ovarian reserve is a very strong indicator of infertility, even in an a priori non-infertile population.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0908",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: ART has no effect on the infectiveness of HIV-positive people.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: ART substantially reduces infectiveness of HIV-positive people.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0910",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Activated Cdk5 phosphorylates the ATM protein in response to DNA damage.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Activated Cdk5 regulates DNA damage-induced neuronal death.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0914",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Active Ly49Q induces neutrophil polarization.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Active Ly49Q prevents neutrophil polarization.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0916",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Active caspase-11 participate in regulating phagosome-lysosome fusion.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Active caspase-11 protein promotes pyroptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0918",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Adult tissue-resident macrophages are seeded before birth.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Adult tissue-resident macrophages possess a self-renewing capacity.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0929",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Anthrax spores are very difficult to dispose once they are dispersed.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Anthrax spores remain deadly until affected areas are decontaminated.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0931",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Antidepressants increase the severity of migraines.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Antidepressants reduce the severity of migraines.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0933",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Antimicrobial agents are less effective due to the pressure of antimicrobial usage.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Antimicrobial agents are more effective due to the pressure of antimicrobial usage.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0940",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: BCL-2 activation antagonizes the apoptotic effects of c-Myc.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: BCL-2 promotes the apoptotic effects of c-Myc.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0945",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery increases rates of colorectal cancer.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery increases rates of postmenopausal breast cancer.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0947",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery leads to negative outcomes in mental health.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery leads to positive outcomes in mental health.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0948",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery increases rates of colorectal cancer.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery reduces colorectal cancer.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0949",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery increases rates of colorectal cancer.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Bariatric surgery reduces postmenopausal breast cancer.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0950",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: A T helper 2 cell (Th2) environment impedes disease development in patients with systemic lupus erythematosus (SLE).\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Basophils promote disease development in patients with systemic lupus erythematosus (SLE).\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0963",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Ca2+ cycling controls whole-body energy homeostasis in beige fat.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Ca2+ cycling is a UCP1-dependent thermogenic mechanism.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0964",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Ca2+ cycling controls whole-body energy homeostasis in beige fat.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Ca2+ cycling is a UCP1-independent thermogenic mechanism.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0970",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Cellular clocks are associated with mitosis timing in NIH 3T3 cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Cellular clocks are not predictive of mitosis timing in NIH 3T3 cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0973",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Chenodeoxycholic acid treatment decreases brown adipose tissue activity.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Chenodeoxycholic acid treatment increases brown adipose tissue activity.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0977",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Citrullinated proteins externalized in neutrophil extracellular traps act indirectly to disrupt the inflammatory cycle.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Citrullinated proteins externalized in neutrophil extracellular traps act indirectly to perpetuate the inflammatory cycle via induction of autoantibodies.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0983",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Commelina yellow mottle virus (ComYMV) has three typical badnavirus ORFs, capable of encoding proteins 23, 15, and 216 kD.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Commelina yellow mottle virus' (ComYMV) genome consists of 2140 baise pairs.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0986",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: APOE4 expression in iPSC-derived neurons results in decreased tau phosphorylation.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Converting apoE4 to apoE3 by gene editing prevents the pathology associated with apoE4 in human iPSCderived neurons.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0987",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: APOE4 expression in iPSC-derived neurons results in decreased tau phosphorylation.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Converting apoE4 to apoE3 by gene editing worsens the pathology associated with apoE4 in human iPSCderived neurons.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0989",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Cost effectiveness evaluations based on cRCT data accurately reflect prices for patients in actual clinical practice.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Cost effectiveness evaluations based on cRCT data lack external validity.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0994",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: DUSP4 decreases apoptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: DUSP4 downregulation deactivates the Ras-ERK pathway\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0995",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: DUSP4 decreases apoptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: DUSP4 increases apoptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q0998",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Deltex has no known interactions with eIF3f.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Deltex interacts with eIF3. There is no known interaction between Deltex and elF3\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1000",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Depletion of T-helper 17 (Th17) cells during simian immunodeficiency virus (SIV) infection decreases dissemination of Salmonella Typhimurium from the gut.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Depletion of T-helper 17 (Th17) cells during simian immunodeficiency virus (SIV) infection increases dissemination of Salmonella Typhimurium from the gut.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1005",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Diabetes remission occurs less in people treated with conventional therapy than in people treated with laparoscopic adjustable gastric banding surgery.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Diabetes remission occurs more in people treated with conventional therapy than in people treated with laparoscopic adjustable gastric banding surgery.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1007",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Differentiation of progenitor cells to myeloid cells is skewed upon activation of insulin signaling.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Differentiation of progenitor cells to myeloid cells is skewed when insulin signaling is suppressed.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1008",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: A diminished ovarian reserve does not solely indicate infertility in an a priori non-infertile population.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Diminished ovarian reserve is a reliable indicator of infertility in a non-infertile population.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1013",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Early patent ductus ateriosus (PDA) screening decreases in-hospital mortality.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Early patent ductus ateriosus (PDA) screening increases in-hospital mortality.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1016",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Egr2 regulates the homeostasis of B and T cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Egr3 regulates the homeostasis of B and T cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1025",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Exercise increases cancer mortality rates among Chinese citizens.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Exercise reduces cancer mortality rates among Chinese citizens.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1028",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Female carriers of the Apolipoprotein E4 (APOE4) allele have decreased risk for dementia.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Female carriers of the Apolipoprotein E4 (APOE4) allele have increased risk for Alzheimer's disease.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1029",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Female carriers of the Apolipoprotein E4 (APOE4) allele have decreased risk for dementia.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Female carriers of the Apolipoprotein E4 (APOE4) allele have longer lifetime exposure to estrogen due to an increased reproductive period.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1030",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Female carriers of the Apolipoprotein E4 (APOE4) allele have decreased risk for dementia.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Female carriers of the Apolipoprotein E4 (APOE4) allele have shorter lifetime exposure to estrogen due to a decreased reproductive period.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1033",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Forkhead 0 (fox0) transcription factors are involved in apoptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Forkhead 0 (fox0) transcription factors are involved in cellular differentiation.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1036",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Cancer cells can stimulate the accumulation of intra-tumoural myeloid-derived suppressor cells by promoting granulocyte colony stimulating factor production.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: G-CSF increases the expansion and infiltration of MDSCs into tumors.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1038",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: GATA3 regulates cell cycle progression in bone marrow hematopoietic stem cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: GATA3 regulates self-renewal capacity in bone marrow hematopoietic stem cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1040",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Gastric infection with Helicobacter pylori decreases risk of gastric cancer in humans.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Gastric infection with Helicobacter pylori increases risk of gastric cancer in humans.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1042",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: General exercise therapy is more effective than rotator cuff exercises in reducing pain and improving function of the shoulder.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: General exercise therapy is more effective than scapular stabilizer exercises in reducing pain and improving function of the shoulder.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1051",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Gpr124 increases BBB breakdown in mouse models of ischemic stroke.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Gpr124 suppresses BBB breakdown in mouse models of ischemic stroke.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1054",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Deregulation of HAND2 is a crucial step in endometrial carcinogenesis in mice.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: HAND2 methylation is a key step in early endometrial carcinogenesis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1056",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Having a main partner improves HIV outcomes.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Having a main partner worsens HIV outcomes.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1060",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: H.pylori-mediated gastric cancer occurs due to the accumulation of mutations in host epithelial cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Helicobacter pylori-induced aberrant NF-kB-dependent expression of activation-induced cytidine deaminase contributes to the mutagenesis of host DNA.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1064",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Higher plasma levels of I-carnitine, when associated with trimethylamine N-oxide, are negatively correlated with cardiovascular events in humans.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Higher plasma levels of I-carnitine, when associated with trimethylamine N-oxide, are positively correlated with cardiovascular events in humans.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1066",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Human embryonic stem cells give rise to cell types from all three embryonic germ layers.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Human embryonic stem cells give rise to cell types from the outer embryonic germ layer, but not the other two layers.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1067",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Human embryonic stem cells give rise to cell types from all three embryonic germ layers.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Human embryonic stem cells have the capacity to give rise to differentiated progeny representative of all three embryonic germ layers.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1069",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Energy balance requires hypothalamic glutamate neurotransmission.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Hypothalamic glutamate neurotransmission is unrelated to energy balance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1077",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: In British Men, haplogroup I decreases risk of cardiovascular disease.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: In British Men, haplogroup I increases risk of cardiovascular disease by 50%.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1079",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: In S. cerevisiae, the absence of RNA surveillance pathways causes sensitivity to high iron conditions.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: In S. cerevisiae, the absence of RNA surveillance pathways reduces sensitivity to high iron conditions.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1082",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: In breast cancer, the loss of myoepithelial cells promotes the transition of ductal carcinoma in situ to invasive carcinoma.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: In breast cancer, the loss of myoepithelial cells slows the transition of ductal carcinoma in situ to invasive carcinoma.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1089",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Incidence of 10/66 dementia is higher than the incidence of DSM-IV dementia.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Incidence of 10/66 dementia is lower than the incidence of DSM-IV dementia.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1093",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Including pharmacists in rounding teams does not alter the incidence of adverse drug events (ADEs).\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Including pharmacists in rounding teams reduces the incidence of adverse drug events (ADEs).\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1094",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Alirocumab treatment reduces apo(a) fractional clearance rate.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Increased LDL receptors plays a role in the reduction of plasma Lp(a).\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1095",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Decreased diastolic blood pressure (DBP) is associated with abdominal aortic aneurysm.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Increased diastolic blood pressure (DBP) is associated with abdominal aortic aneurysm.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1097",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Increased microtubule acetylation exacerbates LRRK2 Roc-COR domain mutation induced locomotor deficits.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Increased microtubule acetylation repairs interference of axonal transport caused by LRRK2 Roc-COR domain mutations.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1098",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Increased microtubule acetylation exacerbates LRRK2 Roc-COR domain mutation induced locomotor deficits.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Increased microtubule acetylation worsens interference of axonal transport caused by LRRK2 Roc-COR domain mutations.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1101",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Induced hepatic stem cells possess the potential to differentiate into cholangiocytic cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Induced hepatic stem cells possess the potential to differentiate into hepatocytic cells.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1105",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Inhibiting focal adhesion formation enables cells to convert mechanical strain into eventual scarring.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Inhibiting focal adhesion formation increases the rate at which cells convert mechanical strain into inflammation and fibrosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1110",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Intake of folic acid (FA) and vitamin B6 (VB6) increases levels of homocysteine.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Intake of folic acid (FA) and vitamin B6 (VB6) reduces levels of homocysteine.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1112",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Integrated care is ineffective at tackling multiple comorbidities.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Integrated care is successful at tackling multiple comorbidities.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1116",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: JMJD6 catalyzes the hydroxylation of C-terminal lysine and supresses transcriptional activity.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: JMJD6 slows the hydroxylation of C-terminal lysine\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1117",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Cholesterol loading induces KLF4 expression in VSMCs, resulting in the expression of pro-inflammatory cytokines.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: KLF4 is necessary for VSMCs to gain genetic characteristics of other cell types within atherosclerotic lesions.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1122",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Knockout proximal tubule-specific deletion of the BMP receptor Alk3 causes epithelial damage.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Knockout proximal tubule-specific deletion of the BMP receptor Alk3 causes fibrosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1124",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Fibroblast growth factor 21 protects against atherosclerosis by modulating adiponectin and SREBP2 levels.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Lack of FGF21 in mice increases life expectancy.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1125",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Fibroblast growth factor 21 protects against atherosclerosis by modulating adiponectin and SREBP2 levels.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Lack of FGF21 in mice leads to atherosclerotic plaque formation.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1126",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Fibroblast growth factor 21 protects against atherosclerosis by modulating adiponectin and SREBP2 levels.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Lack of FGF21 in mice leads to reduced lifespan.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1127",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Fibroblast growth factor 21 protects against atherosclerosis by modulating adiponectin and SREBP2 levels.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Lack of FGF21 in mice slows the rate of atherosclerotic plaque formation.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1131",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Active Ly49Q induces neutrophil polarization.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Ly49Q directs the organization of neutrophil polarization by regulating membrane raft functions.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1135",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MICAL redox enzymes regulate actin dynamics in many cell types.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MICAL redox enzymes regulate actin dynamics.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1138",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MafA phosphorylation decreases its ubiquitination.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MafA phosphorylation enhances its ubiquitination.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1139",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MafA phosphorylation decreases its ubiquitination.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MafA ubiquitination decreases the recruitment of coavtivator P/CAF by MafA.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1140",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MafA phosphorylation decreases its ubiquitination.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: MafA ubiquitination increases the recruitment of coavtivator P/CAF by MafA.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1143",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Major vault protein (MVP) leads to more aggressive tumors by regulating the sorting of tumor suppressive miR-193a into extracellular vesicles (EVs).\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Major vault protein regulates sorting of tumor suppressive miR-193a into EVs.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1146",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Medications to treat obesity are highly effective.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Medications to treat obesity do not have side effects.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1147",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Medications to treat obesity are highly effective.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Medications to treat obesity have unwanted side effects.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1150",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Eilat virus (EILV) produced in mosquitos elicits rapid and long-lasting neutralizing antibodies in nonhuman primates.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mice are incapable of producing neutralizing antibodies in reponse to the Chikungunya virus (CHIKV) produced in mosquitos.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1152",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mice lacking Sirt1 in Sf1-expressing neurons are immune to diet-induced obesity and insulin resistance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mice lacking Sirt1 in Sf1-expressing neurons have increased susceptibility to diet-induced obesity and insulin resistance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1154",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mice that lack Interferon-γ or its receptor are highly susceptible to experimental autoimmune myocarditis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mice without IFN-γ or its receptor are highly susceptible to EAM induced with α-MyHC/CFA.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1156",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Microcin J25 encourages nucleoside triphosphate (NTP) binding.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Microcin J25 inhibits nucleoside triphosphate (NTP) binding.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1158",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Microglia are an innate immune cell type of the central nervous system.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Microglia are an innate immune cell type of the peripheral nervous system.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1162",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mitochondria play a major role in apoptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mitochondria play a major role in energy production.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1163",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mitochondria play a major role in apoptosis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mitochondria play a trivial role in calcium homeostasis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1165",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Monoclonal antibody targeting of N-cadherin encourages castration resistance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Monoclonal antibody targeting of N-cadherin encourages metastasis.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1166",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Monoclonal antibody targeting of N-cadherin encourages castration resistance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Monoclonal antibody targeting of N-cadherin inhibits castration resistance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1167",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Monoclonal antibody targeting of N-cadherin encourages castration resistance.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Monoclonal antibody targeting of N-cadherin inhibits growth.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1168",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Alteration of origin firing causes changes in termination zones of Okazaki fragments.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Most termination events in Okazaki fragments are dictated by initiation patterns.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1169",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Androgenetic haploid mouse embryonic stem cells (ESCs) can be derived and genetically manipulated in vitro.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mouse models can be generated using \"artificial spermatids.\"\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1172",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mutations in RIM1 decrease levels of IME1 RNA.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Mutations in RIM1 raise levels of IME1 RNA.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1175",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: N348I mutations cause resistance to nevirapine.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: N348I mutations reduce resistance to nevirapine.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1178",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Natriuretic peptides increase susceptibility to diabetes.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Natriuretic peptides protect against diabetes.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1181",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Eilat virus (EILV) produced in mosquitos elicits rapid and long-lasting neutralizing antibodies in nonhuman primates.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Nonhuman primates are incapable of producing neutralizing antibodies in reponse to the Eilat virus (EILV) produced in mosquitos.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1185",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Nonsteroidal antinflammatory drugs are ineffective as cancer treatments.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Nonsteroidal antinflammatory drugs show potential anticancer indications.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  },
+  {
+    "question_id": "q1188",
+    "domain": "Science",
+    "same_excerpt": true,
+    "previous_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Normal granulomas form in the absence of TNF in Zebrafish.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract.",
+    "verified_prompt": "Given the abstract below, does the evidence SUPPORT the following claim?\n\nClaim: Normal granulomas form in the presence of TNF in Zebrafish.\n\nAnswer with 'Yes' or 'No' on the first line, followed by 4-6 sentences explaining your reasoning based on the abstract."
+  }
+]

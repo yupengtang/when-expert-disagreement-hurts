@@ -1,0 +1,5 @@
+model,n_paired,prestige_effect_disagreement_pp,prestige_effect_agreement_pp,interaction_pp,interaction_paired_boot_ci_lo_pp,interaction_paired_boot_ci_hi_pp
+anthropic/claude-opus-4.8,249,-0.8,-2.41,1.61,-1.2,4.42
+google/gemini-3.6-flash,195,1.03,1.03,0.0,-2.56,2.56
+openai/gpt-5.6-terra,250,6.8,-4.8,11.6,6.8,16.8
+x-ai/grok-4.5,250,2.8,-0.8,3.6,0.8,6.8

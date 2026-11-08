@@ -1,0 +1,21 @@
+\begin{table}[t]
+\caption{Four-condition paired interactions (pp). $I_R=P_{\rm disagree}-P_{\rm agree}$ is defined on reversal and $I_F=P_{\rm disagree}+P_{\rm agree}$ on source following; only $I_F$ compares the same outcome under disagreement and agreement. Item-bootstrap percentile intervals; padded suite.}
+\label{tab:conformity_interaction}
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrcc}
+\toprule
+Model & $N$ & $I_R$ [95\% CI] & $I_F$ [95\% CI] \\
+\midrule
+Claude-Sonnet-4 & 500 & $+1.00$ [$-1.00$, $+3.00$] & $-0.20$ [$-2.40$, $+2.00$] \\
+Gemini-2.5-Flash & 500 & $-0.40$ [$-3.00$, $+2.20$] & $+0.00$ [$-3.00$, $+3.00$] \\
+GPT-4o-mini & 500 & $+4.40$ [$+2.20$, $+6.80$] & $+4.40$ [$+2.00$, $+7.00$] \\
+Llama-3.1-8B & 498 & $+18.27$ [$+11.04$, $+25.30$] & $-2.21$ [$-8.23$, $+3.82$] \\
+Llama-3.3-70B & 495 & $+2.63$ [$+1.01$, $+4.44$] & $+2.22$ [$+0.40$, $+4.24$] \\
+Claude-Opus-4.8 & 249 & $+1.61$ [$-1.20$, $+4.42$] & $-3.21$ [$-5.62$, $-0.80$] \\
+Gemini-3.6-Flash & 195 & $+0.00$ [$-2.56$, $+2.56$] & $+2.05$ [$-1.54$, $+6.15$] \\
+GPT-5.6-terra & 250 & $+11.60$ [$+6.80$, $+16.80$] & $+2.00$ [$-2.00$, $+6.00$] \\
+Grok-4.5 & 250 & $+3.60$ [$+0.80$, $+6.80$] & $+2.00$ [$-1.21$, $+5.60$] \\
+\bottomrule
+\end{tabular}
+\end{table}

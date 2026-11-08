@@ -1,0 +1,10 @@
+model,condition,R_given_correct,R_given_wrong,selectivity_ratio
+Claude-Sonnet-4,A0,0.0566,0.0517,0.913
+Claude-Sonnet-4,A1,0.2196,0.161,0.733
+Claude-Sonnet-4,A3,0.2333,0.2612,1.119
+GPT-4o-mini,A0,0.0278,0.0772,2.782
+GPT-4o-mini,A1,0.0996,0.2162,2.171
+GPT-4o-mini,A3,0.1691,0.2819,1.667
+Gemini-2.0-Flash,A0,0.0505,0.0936,1.854
+Gemini-2.0-Flash,A1,0.1258,0.202,1.606
+Gemini-2.0-Flash,A3,0.1021,0.2255,2.209

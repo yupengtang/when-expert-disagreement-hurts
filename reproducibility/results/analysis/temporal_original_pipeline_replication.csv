@@ -1,0 +1,4 @@
+condition,n_paired,jan2026_reversal_pct,jul2026_reversal_pct,change_pp,jul_only_reversal,jan_only_reversal,mcnemar_p,same_pass1_label_pct
+A0,224,5.36,4.91,-0.45,5,6,1.0,95.98
+A1,224,15.18,15.18,0.0,5,5,1.0,95.98
+A3,224,25.89,24.11,-1.79,9,13,0.5234670639038086,95.98

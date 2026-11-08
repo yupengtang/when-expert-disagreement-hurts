@@ -1,0 +1,27 @@
+{
+    "reputation_levels": [
+        "A0",
+        "A1",
+        "A3"
+    ],
+    "evidence_levels": [
+        "B0"
+    ],
+    "framing_levels": [
+        "C1"
+    ],
+    "core_temperatures": [
+        0.7
+    ],
+    "core_top_p": 1.0,
+    "core_max_tokens": 600,
+    "core_replicates": 1,
+    "run_mechanistic_core": true,
+    "run_behavioral_anchors": true,
+    "ablations": {
+        "aep_entity_virtualization": false
+    },
+    "api_reference_tokenizer_model_id": "gpt2",
+    "parallel": true,
+    "max_workers": 12
+}

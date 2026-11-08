@@ -1,0 +1,7 @@
+model,stratum,n_paired,rev_A3,rev_A3g,rev_A3_rat,rev_A3_rat_gated,gate_effect_pp,gate_mcnemar_p
+anthropic/claude-sonnet-4,Pass-1 wrong: target matches benchmark label,24,0.4167,0.2917,0.5,0.625,12.5,0.25
+anthropic/claude-sonnet-4,Pass-1 correct: target conflicts with benchmark label,225,0.0622,0.0311,0.2667,0.2267,-4.0,0.03515625
+google/gemini-2.5-flash,Pass-1 wrong: target matches benchmark label,30,0.0667,0.1667,0.2667,0.2667,0.0,1.0
+google/gemini-2.5-flash,Pass-1 correct: target conflicts with benchmark label,219,0.0183,0.0137,0.1416,0.1735,3.2,0.143463134765625
+openai/gpt-4o-mini,Pass-1 wrong: target matches benchmark label,20,0.05,0.0,0.6,0.65,5.0,1.0
+openai/gpt-4o-mini,Pass-1 correct: target conflicts with benchmark label,229,0.0655,0.0437,0.2882,0.2533,-3.49,0.021484375

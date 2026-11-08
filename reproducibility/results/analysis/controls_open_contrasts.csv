@@ -1,0 +1,25 @@
+model,contrast,meaning,n_paired,rate_hi,rate_lo,diff_pp,discordant_hi_only,discordant_lo_only,mcnemar_p
+meta-llama/llama-3.1-8b-instruct,A3 - A1,prestige increment P (expert vs anonymous),500,0.278,0.198,8.0,85,45,0.0005715227032055847
+meta-llama/llama-3.1-8b-instruct,A3 - A2,expert vs low-prestige,499,0.2786,0.1483,13.03,101,36,2.5103159341769537e-08
+meta-llama/llama-3.1-8b-instruct,A3 - A4,expert vs neutral metadata,500,0.278,0.248,3.0,72,57,0.21756125383946115
+meta-llama/llama-3.1-8b-instruct,A4 - A1,neutral metadata vs bare anonymous,500,0.248,0.198,5.0,84,59,0.044372934512208626
+meta-llama/llama-3.1-8b-instruct,A2 - A4,low-prestige vs neutral metadata,499,0.1483,0.2465,-9.82,40,89,1.9141845929673944e-05
+meta-llama/llama-3.1-8b-instruct,A1 - A0,disagreement sensitivity G,500,0.198,0.214,-1.6,56,64,0.5229909838899945
+meta-llama/llama-3.1-8b-instruct,A3_agree - A3,expert agreement vs expert disagreement,499,0.2605,0.2786,-1.8,77,86,0.5310454494607927
+meta-llama/llama-3.1-8b-instruct,A3_agree - A0,expert agreement vs neutral reflection,499,0.2605,0.2144,4.61,77,54,0.054170800387233015
+meta-llama/llama-3.1-8b-instruct,A3_agree - A1_agree,prestige effect within agreement,498,0.261,0.3635,-10.24,56,107,7.945707619736947e-05
+meta-llama/llama-3.1-8b-instruct,A3g - A3,evidence gate on bare expert disagreement,500,0.254,0.278,-2.4,61,73,0.34201470886630886
+meta-llama/llama-3.1-8b-instruct,A3_rat - A3,padded expert+rationale prompt package vs answer-only,498,0.4538,0.2751,17.87,149,60,6.379464580886852e-10
+meta-llama/llama-3.1-8b-instruct,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,498,0.3635,0.4538,-9.04,75,120,0.0015607117566382043
+meta-llama/llama-3.3-70b-instruct,A3 - A1,prestige increment P (expert vs anonymous),496,0.0786,0.0544,2.42,14,2,0.004180908203125
+meta-llama/llama-3.3-70b-instruct,A3 - A2,expert vs low-prestige,497,0.0785,0.0684,1.01,13,8,0.38331031799316406
+meta-llama/llama-3.3-70b-instruct,A3 - A4,expert vs neutral metadata,495,0.0788,0.0566,2.22,15,4,0.0192108154296875
+meta-llama/llama-3.3-70b-instruct,A4 - A1,neutral metadata vs bare anonymous,495,0.0566,0.0545,0.2,7,6,1.0
+meta-llama/llama-3.3-70b-instruct,A2 - A4,low-prestige vs neutral metadata,496,0.0685,0.0565,1.21,11,5,0.210113525390625
+meta-llama/llama-3.3-70b-instruct,A1 - A0,disagreement sensitivity G,497,0.0543,0.0121,4.23,21,0,9.5367431640625e-07
+meta-llama/llama-3.3-70b-instruct,A3_agree - A3,expert agreement vs expert disagreement,497,0.0141,0.0785,-6.44,1,33,4.0745362639427185e-09
+meta-llama/llama-3.3-70b-instruct,A3_agree - A0,expert agreement vs neutral reflection,498,0.0141,0.012,0.2,3,2,1.0
+meta-llama/llama-3.3-70b-instruct,A3_agree - A1_agree,prestige effect within agreement,497,0.0141,0.0161,-0.2,3,4,1.0
+meta-llama/llama-3.3-70b-instruct,A3g - A3,evidence gate on bare expert disagreement,495,0.0626,0.0768,-1.41,13,20,0.296206368599087
+meta-llama/llama-3.3-70b-instruct,A3_rat - A3,padded expert+rationale prompt package vs answer-only,495,0.4343,0.0788,35.56,182,6,2.9812938493607498e-46
+meta-llama/llama-3.3-70b-instruct,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,496,0.375,0.4335,-5.85,8,37,1.5374090196473844e-05

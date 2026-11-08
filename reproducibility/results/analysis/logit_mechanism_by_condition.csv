@@ -1,0 +1,7 @@
+model,condition,n,reversals,reversals_without_signflip,mismatch_rate,median_|l2|_reversed,median_|l2|_not_reversed,median_|l2|_mismatched_reversals,mean_delta_toward_opponent,mean_delta_l_reversed,mean_delta_l_not_reversed
+Llama-3.1-8B,A0,1988,261,215,0.8238,1.263,3.5,1.505,0.171,-0.284,-0.16
+Llama-3.1-8B,A1,1988,361,243,0.6731,1.296,2.904,1.554,1.154,-0.955,-0.924
+Llama-3.1-8B,A3,1989,465,294,0.6323,1.426,2.504,1.538,1.681,-1.008,-1.127
+Mistral-7B,A0,1981,87,57,0.6552,3.924,15.001,4.661,0.206,-3.502,-1.153
+Mistral-7B,A1,1980,259,107,0.4131,3.97,12.788,3.04,3.587,-2.097,-1.289
+Mistral-7B,A3,1980,358,96,0.2682,5.287,12.044,5.055,5.404,0.3,-1.478

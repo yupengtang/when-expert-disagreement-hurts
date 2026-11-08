@@ -1,0 +1,214 @@
+[
+  {
+    "historical_question_id": "rq0024",
+    "question_id": "controls-evidence-complete-v2:rq0024",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "8abed2666a3fd7d93c9f1d8a06fa13e6df3d8b66747cc4a9053859f715c2435b",
+    "after_excerpt_sha256": "d2c5a76f5e292c9864551043940fcaed97eeb9067115364da5905084e1485161",
+    "before_chars": 3195,
+    "after_chars": 4411,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0027",
+    "question_id": "controls-evidence-complete-v2:rq0027",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "d20a2c060581ee15df043a5e9a6713ed1f0fdf31168f855496235192c367c756",
+    "after_excerpt_sha256": "5b7daedbcebaa9da90178333ebd6076da477c5fa6318bb217990ed325b7ee159",
+    "before_chars": 3199,
+    "after_chars": 3792,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0055",
+    "question_id": "controls-evidence-complete-v2:rq0055",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "c3d98376ff334679af16b7d83288c8738509793513ba99861ac8136efe9ce1db",
+    "after_excerpt_sha256": "b9b969d503165fd4f4e9799e1d85bf8e4224a7fa3459635252bd660ef03ccc81",
+    "before_chars": 3195,
+    "after_chars": 4523,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0160",
+    "question_id": "controls-evidence-complete-v2:rq0160",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "69451d027c80f2f6ca8c6ef9f0092c67842069d62288c1fef520d073c5144926",
+    "after_excerpt_sha256": "152f5d40f939132ffc2dcaa3e0c5ef12ad3c38998c28926ad65359205fee86f4",
+    "before_chars": 3199,
+    "after_chars": 3866,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0240",
+    "question_id": "controls-evidence-complete-v2:rq0240",
+    "missing_annotated_span_indices_before": [
+      2
+    ],
+    "before_excerpt_sha256": "cc5a9050749dfa433bb65a5334eccad584c78b06f1735e0126d3137b95edf468",
+    "after_excerpt_sha256": "ce63eff2bccbc86f71deda661d145a57a14b16148ff3cae49daee2e54f0ffe0f",
+    "before_chars": 3199,
+    "after_chars": 7706,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0253",
+    "question_id": "controls-evidence-complete-v2:rq0253",
+    "missing_annotated_span_indices_before": [
+      3
+    ],
+    "before_excerpt_sha256": "245d18dea13320b0997f57d30eb69cd91e44d43605ffdcef8bd4bf56280aace0",
+    "after_excerpt_sha256": "bdf28ddd15c43a42d13cef9395dc35d00471044a492b5360b2d88800e062e595",
+    "before_chars": 3195,
+    "after_chars": 10265,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0272",
+    "question_id": "controls-evidence-complete-v2:rq0272",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "178707c80c06fdf4e92a61de9a468edd96f274e49fc8d89fd5d83503eb415b49",
+    "after_excerpt_sha256": "023fc58971e67a4d8cd3d4235cfd85a651f55ebb8d557e16e8904fab32ecb209",
+    "before_chars": 3197,
+    "after_chars": 4568,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0278",
+    "question_id": "controls-evidence-complete-v2:rq0278",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "f6be4cd1ddf60e43f36a0b60330434ccc689927fb1cc614ffdde39338bac1dc6",
+    "after_excerpt_sha256": "89f00b887010a25056fd4e522a6fb52ee60f33943e618ae8a335b9d1c44c58bf",
+    "before_chars": 3196,
+    "after_chars": 16765,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0335",
+    "question_id": "controls-evidence-complete-v2:rq0335",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "12ee2303e64ba57b14f0db2e08e8d6e8d98363b25008b4cc71e59f1a95a6dc84",
+    "after_excerpt_sha256": "8a8b1845ee2d89ec0e0f37efe58e40ffddb157954e7ce401d2355ada42de2972",
+    "before_chars": 3199,
+    "after_chars": 6135,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0350",
+    "question_id": "controls-evidence-complete-v2:rq0350",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "f6be4cd1ddf60e43f36a0b60330434ccc689927fb1cc614ffdde39338bac1dc6",
+    "after_excerpt_sha256": "ad84855006e069eda4f2267822640f3370416fcff005b3637866dec364651a44",
+    "before_chars": 3196,
+    "after_chars": 16765,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0356",
+    "question_id": "controls-evidence-complete-v2:rq0356",
+    "missing_annotated_span_indices_before": [
+      1,
+      2
+    ],
+    "before_excerpt_sha256": "1972baac5b76ddae556507b718c28b70feae983655a8f3da23b2d00cf55dbe25",
+    "after_excerpt_sha256": "2084d878987e7cb46d859e086c9c529cd248bcc24d1faf7fa54213f5875a1f3d",
+    "before_chars": 3196,
+    "after_chars": 4846,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0364",
+    "question_id": "controls-evidence-complete-v2:rq0364",
+    "missing_annotated_span_indices_before": [
+      3
+    ],
+    "before_excerpt_sha256": "82629c05c9068559b0f7ce3404bdd1c729922375a0af64cb68261cb705a3c2dc",
+    "after_excerpt_sha256": "2af9952788f5e7e265622ff26470dc94047e866f5ae0486e2cfba0cd68c7572a",
+    "before_chars": 3193,
+    "after_chars": 4358,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0403",
+    "question_id": "controls-evidence-complete-v2:rq0403",
+    "missing_annotated_span_indices_before": [
+      2
+    ],
+    "before_excerpt_sha256": "64031f9bced98b87d3a846178f7e7fb39c9b80bd5865825aa29b0a2424511e95",
+    "after_excerpt_sha256": "5b77ac3630f71db73b5ae5c60fe8a3fd6a102b4035f164a49a1a52ae6c762ea3",
+    "before_chars": 3195,
+    "after_chars": 4598,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0453",
+    "question_id": "controls-evidence-complete-v2:rq0453",
+    "missing_annotated_span_indices_before": [
+      2,
+      3,
+      4
+    ],
+    "before_excerpt_sha256": "db9e65d4bbf0a7411f22b3dd3b0c676d61ba6016a09302581b75e27db0766bf0",
+    "after_excerpt_sha256": "f2ac3851591479cdee362b9230584f1652f410a84dff1edadb8adf9d3d237ff5",
+    "before_chars": 3195,
+    "after_chars": 15454,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0458",
+    "question_id": "controls-evidence-complete-v2:rq0458",
+    "missing_annotated_span_indices_before": [
+      3,
+      4
+    ],
+    "before_excerpt_sha256": "868b2e3db7cc796fe46acb7c90575a327d93cfacf9d69186e96fa0f7a5ca4066",
+    "after_excerpt_sha256": "7b9f34e8e3ade7a9728a6c3036f9a8b740a56482139cf72f322bf47f32e303d3",
+    "before_chars": 3195,
+    "after_chars": 4341,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  },
+  {
+    "historical_question_id": "rq0461",
+    "question_id": "controls-evidence-complete-v2:rq0461",
+    "missing_annotated_span_indices_before": [
+      1
+    ],
+    "before_excerpt_sha256": "bd274182b05ff7888301666186275f7cd7a9ab9b3eda112aef6492ef9b4a365c",
+    "after_excerpt_sha256": "3763fe304621301065a72f5030380c953f70e21997c99af139415b47b67e9508",
+    "before_chars": 3199,
+    "after_chars": 9977,
+    "all_annotated_spans_present_after": true,
+    "historical_rationales_must_be_regenerated": true
+  }
+]

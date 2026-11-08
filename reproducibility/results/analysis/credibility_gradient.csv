@@ -1,0 +1,6 @@
+set,model,n,anon,neutral,expert+hedge,expert,expert+record,record_minus_expert,p_record,hedge_minus_expert,p_hedge,expert_levels_ordered
+paper,anthropic/claude-sonnet-4,500,7.4,6.2,1.4,7.8,8.8,1.0,0.5900533317766357,-6.4,1.941225491464138e-08,True
+paper,google/gemini-2.5-flash,500,4.8,4.0,4.4,4.6,9.0,4.4,0.0009406740282429382,-0.2,1.0,True
+paper,openai/gpt-4o-mini,500,3.0,4.4,2.2,7.4,8.2,0.8,0.5034446716308594,-5.2,8.67992639541626e-07,True
+current,openai/gpt-5.6-terra,250,6.8,10.0,9.2,13.6,15.2,1.6,0.5234670639038086,-4.4,0.043285250663757324,True
+current,x-ai/grok-4.5,250,5.2,5.6,4.0,8.0,12.0,4.0,0.0308837890625,-4.0,0.021270751953125,True
