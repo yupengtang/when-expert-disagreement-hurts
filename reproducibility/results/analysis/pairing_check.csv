@@ -1,0 +1,16 @@
+model,contrast,items_with_both,same_pass1,same_pass1_pct
+Claude-Sonnet-4,A1 vs A3,1984,1984,100.0
+Claude-Sonnet-4,A0 vs A1,1984,1984,100.0
+Claude-Sonnet-4,A0 vs A3,1982,1982,100.0
+GPT-4o-mini,A1 vs A3,1986,1986,100.0
+GPT-4o-mini,A0 vs A1,1986,1986,100.0
+GPT-4o-mini,A0 vs A3,1986,1986,100.0
+Gemini-2.0-Flash,A1 vs A3,1984,1984,100.0
+Gemini-2.0-Flash,A0 vs A1,1983,1983,100.0
+Gemini-2.0-Flash,A0 vs A3,1986,1986,100.0
+Llama-3.1-8B,A1 vs A3,1988,1987,99.95
+Llama-3.1-8B,A0 vs A1,1987,1987,100.0
+Llama-3.1-8B,A0 vs A3,1988,1987,99.95
+Mistral-7B,A1 vs A3,1978,1978,100.0
+Mistral-7B,A0 vs A1,1979,1979,100.0
+Mistral-7B,A0 vs A3,1979,1979,100.0

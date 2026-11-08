@@ -1,0 +1,50 @@
+\begin{table}[htbp]
+\caption{Reversal percentages by initial answer and true label, with valid $N$ in parentheses. Initial-Yes reversal is Yes$\to$No; initial-No reversal is No$\to$Yes.}
+\label{tab:direction_rates}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llccc}
+\toprule
+Model & Stratum & $A_0$ & $A_1$ & $A_3$ \\
+\midrule
+GPT-4o-mini & Initial Yes & 5.0 (1215) & 16.8 (1214) & 26.7 (1214) \\
+GPT-4o-mini & Initial No & 0.9 (773) & 3.1 (772) & 5.3 (772) \\
+GPT-4o-mini & True Yes & 3.8 (1378) & 13.7 (1377) & 23.0 (1377) \\
+GPT-4o-mini & True No & 2.5 (610) & 6.6 (609) & 7.9 (609) \\
+Claude-Sonnet-4 & Initial Yes & 9.2 (1139) & 33.0 (1138) & 34.5 (1137) \\
+Claude-Sonnet-4 & Initial No & 0.7 (846) & 5.2 (848) & 9.3 (847) \\
+Claude-Sonnet-4 & True Yes & 7.4 (1375) & 27.6 (1376) & 30.7 (1374) \\
+Claude-Sonnet-4 & True No & 1.5 (610) & 6.4 (610) & 8.0 (610) \\
+Gemini-2.0-Flash & Initial Yes & 7.1 (1345) & 18.5 (1344) & 14.3 (1345) \\
+Gemini-2.0-Flash & Initial No & 2.2 (641) & 2.7 (640) & 5.5 (642) \\
+Gemini-2.0-Flash & True Yes & 6.0 (1376) & 15.6 (1375) & 13.1 (1377) \\
+Gemini-2.0-Flash & True No & 4.4 (610) & 8.2 (609) & 7.7 (610) \\
+Llama-3.1-8B & Initial Yes & 11.7 (1538) & 17.9 (1539) & 22.1 (1540) \\
+Llama-3.1-8B & Initial No & 18.0 (450) & 19.2 (449) & 27.8 (449) \\
+Llama-3.1-8B & True Yes & 9.3 (1379) & 12.0 (1379) & 17.0 (1379) \\
+Llama-3.1-8B & True No & 21.8 (609) & 32.0 (609) & 37.9 (610) \\
+Mistral-7B & Initial Yes & 5.3 (1371) & 9.9 (1371) & 11.9 (1370) \\
+Mistral-7B & Initial No & 2.5 (610) & 20.2 (609) & 32.0 (610) \\
+Mistral-7B & True Yes & 3.9 (1375) & 8.6 (1375) & 11.8 (1376) \\
+Mistral-7B & True No & 5.6 (606) & 23.3 (605) & 32.3 (604) \\
+\midrule
+GPT-5.6-terra & Initial Yes & 8.9 (124) & 12.9 (124) & 23.4 (124) \\
+GPT-5.6-terra & Initial No & 2.4 (126) & 0.8 (126) & 4.0 (126) \\
+GPT-5.6-terra & True Yes & 5.8 (121) & 9.9 (121) & 19.0 (121) \\
+GPT-5.6-terra & True No & 5.4 (129) & 3.9 (129) & 8.5 (129) \\
+Grok-4.5 & Initial Yes & 1.8 (112) & 10.7 (112) & 14.3 (112) \\
+Grok-4.5 & Initial No & 1.4 (138) & 0.7 (138) & 2.9 (138) \\
+Grok-4.5 & True Yes & 1.7 (121) & 8.3 (121) & 13.2 (121) \\
+Grok-4.5 & True No & 1.6 (129) & 2.3 (129) & 3.1 (129) \\
+Gemini-3.6-Flash & Initial Yes & 4.1 (97) & 4.1 (97) & 9.3 (97) \\
+Gemini-3.6-Flash & Initial No & 2.4 (127) & 1.6 (124) & 2.3 (129) \\
+Gemini-3.6-Flash & True Yes & 3.7 (108) & 3.8 (105) & 9.4 (106) \\
+Gemini-3.6-Flash & True No & 2.6 (116) & 1.7 (116) & 1.7 (120) \\
+Claude-Opus-4.8 & Initial Yes & 1.9 (107) & 1.9 (107) & 1.9 (107) \\
+Claude-Opus-4.8 & Initial No & 3.5 (142) & 4.9 (142) & 3.5 (142) \\
+Claude-Opus-4.8 & True Yes & 5.0 (120) & 5.8 (120) & 5.0 (120) \\
+Claude-Opus-4.8 & True No & 0.8 (129) & 1.6 (129) & 0.8 (129) \\
+\bottomrule
+\end{tabular}
+\end{table}

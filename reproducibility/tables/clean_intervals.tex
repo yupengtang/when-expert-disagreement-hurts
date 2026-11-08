@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\caption{No-padding paired contrasts. Source-label effects compare expert versus anonymous sources with identical rationales; gate effects compare gated versus ungated expert sources. CIs use 50,000 paired item resamples. Negative gate effects mean fewer reversals, not necessarily greater accuracy.}
+\label{tab:clean_intervals}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrcc}
+\toprule
+Model & Contrast & $N$ & Effect [95\% CI] (pp) & $p$ \\
+\midrule
+GPT-4o-mini & Source label & 249 & $+4.82$ [$+1.61$, $+8.43$] & 0.012 \\
+GPT-4o-mini & Gate & 249 & $-3.21$ [$-6.43$, $+0.00$] & 0.077 \\
+Claude-Sonnet-4 & Source label & 249 & $+5.62$ [$+2.01$, $+9.24$] & 0.004 \\
+Claude-Sonnet-4 & Gate & 249 & $-3.61$ [$-6.83$, $-0.40$] & 0.049 \\
+Gemini-2.5-Flash & Source label & 249 & $+4.42$ [$+0.80$, $+8.03$] & 0.027 \\
+Gemini-2.5-Flash & Gate & 249 & $-0.40$ [$-4.02$, $+3.21$] & 1.00 \\
+GPT-5.6-terra & Source label & 249 & $+2.01$ [$-0.40$, $+4.82$] & 0.23 \\
+GPT-5.6-terra & Gate & 249 & $+0.80$ [$-1.61$, $+3.21$] & 0.75 \\
+Grok-4.5 & Source label & 249 & $+1.20$ [$-1.20$, $+4.02$] & 0.55 \\
+Grok-4.5 & Gate & 249 & $-0.80$ [$-3.21$, $+1.61$] & 0.75 \\
+Gemini-3.6-Flash & Source label & 207 & $+2.42$ [$+0.00$, $+4.83$] & 0.12 \\
+Gemini-3.6-Flash & Gate & 203 & $+0.99$ [$-1.48$, $+3.94$] & 0.73 \\
+Claude-Opus-4.8 & Source label & 248 & $+2.42$ [$+0.40$, $+4.84$] & 0.070 \\
+Claude-Opus-4.8 & Gate & 248 & $+2.42$ [$-1.21$, $+6.05$] & 0.26 \\
+\bottomrule
+\end{tabular}
+\end{table}

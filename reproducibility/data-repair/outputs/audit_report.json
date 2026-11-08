@@ -1,0 +1,51 @@
+{
+  "historical_items_recovered": 1989,
+  "domains": {
+    "Medicine": 890,
+    "Science": 299,
+    "Law": 800
+  },
+  "verification_levels": {
+    "original_generation_excerpt_and_question_hashes": 1987,
+    "surviving_frozen_input": 1,
+    "selection_prompt_and_excerpt_hashes_verified_order": 1
+  },
+  "original_generation_hash_items": 1987,
+  "surviving_frozen_items_crosschecked": 552,
+  "selection_order_records_crosschecked": 1371,
+  "missing_original_items": [],
+  "previous_recovery_wrong_prompt_count": 96,
+  "historical_benchmark_law_excerpts_requiring_repair": 48,
+  "historical_control_law_excerpts_requiring_repair": 16,
+  "repaired_control_items": 500,
+  "all_law_annotated_spans_present_in_v2": true,
+  "historical_results_changed": false,
+  "paid_inference_calls": 0,
+  "inputs_manifest_sha256": "358a047baba7c965719ac9ce1714bbd1aab01e821db53abaf5cd3c17a22e329a",
+  "outputs": {
+    "original_benchmark_recovered.jsonl": {
+      "sha256": "594e1e078fd0a31222a16c1b3f476f4612071e13f1465e1501130c2e65806e6a",
+      "bytes": 6308336
+    },
+    "benchmark_evidence_complete_v2.jsonl": {
+      "sha256": "b7a757c0533e5ec3cb1b76d1b498e11f9ad7d81d8b9d3a37c8d5c13b8210da8d",
+      "bytes": 6809193
+    },
+    "controls_evidence_complete_v2.jsonl": {
+      "sha256": "31c3b8a6f6a3dd3e4ff07d3ad7b269534f70a195e462be001b726bb129e5c21f",
+      "bytes": 2056452
+    },
+    "benchmark_evidence_changes.json": {
+      "sha256": "a70293dd2a1c0619639a02452732695843a8e052760d980b4c5b5712d6451682",
+      "bytes": 25231
+    },
+    "control_evidence_changes.json": {
+      "sha256": "56f32cf00616ab1e53f8df2d117cfdd546a52f1aeb0dc0f12463271d84651734",
+      "bytes": 8283
+    },
+    "previous_recovery_prompt_corrections.json": {
+      "sha256": "dde748d3be509cf829a43693af50965c8e6c2a4c2257da89c5b12d50339b2b2d",
+      "bytes": 68669
+    }
+  }
+}

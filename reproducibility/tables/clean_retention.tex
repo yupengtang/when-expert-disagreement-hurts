@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{No-padding run on September 26, 2026. $N$ is the eligible stored-Pass-1 item count; the next three columns are parseable outputs. Invalid and length-stop counts cover all three conditions. A length stop does not imply an invalid leading answer; parseable leading Yes/No answers are retained. No automatic retries were made.}
+\label{tab:clean_retention}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & $N$ & $A_1^{\rm rat}$ & $A_3^{\rm rat}$ & Gated & Invalid & Length \\
+\midrule
+GPT-5.6-terra & 249 & 249 & 249 & 249 & 0 & 0 \\
+Grok-4.5 & 249 & 249 & 249 & 249 & 0 & 0 \\
+Gemini-3.6-Flash & 233 & 221 & 217 & 214 & 47 & 617 \\
+Claude-Opus-4.8 & 248 & 248 & 248 & 248 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

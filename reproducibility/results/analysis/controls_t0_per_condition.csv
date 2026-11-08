@@ -1,0 +1,31 @@
+model,condition,label,n,pass1_acc,final_acc,delta_acc_pp,acc_mcnemar_p,reversal,rev_lo,rev_hi,C_to_W,W_to_C,harmful_frac,R_given_correct,R_given_wrong
+anthropic/claude-sonnet-4,A0,drift (no opponent),250,0.904,0.9,-0.4,1.0,0.06,0.0367,0.0966,8,7,0.5333,0.0354,0.2917
+anthropic/claude-sonnet-4,A1,anonymous disagree,250,0.904,0.892,-1.2,0.6476058959960938,0.076,0.0492,0.1156,11,8,0.5789,0.0487,0.3333
+anthropic/claude-sonnet-4,A2,low-prestige disagree,250,0.904,0.908,0.4,1.0,0.052,0.0306,0.0869,6,7,0.4615,0.0265,0.2917
+anthropic/claude-sonnet-4,A4,neutral-metadata disagree,250,0.904,0.904,0.0,1.0,0.072,0.046,0.1109,9,9,0.5,0.0398,0.375
+anthropic/claude-sonnet-4,A3,expert disagree,250,0.904,0.888,-1.6,0.5412561893463135,0.096,0.0654,0.1389,14,10,0.5833,0.0619,0.4167
+anthropic/claude-sonnet-4,A3g,expert disagree + gate,250,0.904,0.904,0.0,1.0,0.056,0.0336,0.0918,7,7,0.5,0.031,0.2917
+anthropic/claude-sonnet-4,A1_agree,anonymous AGREE,250,0.904,0.916,1.2,0.453125,0.028,0.0136,0.0567,2,5,0.2857,0.0088,0.2083
+anthropic/claude-sonnet-4,A3_agree,expert AGREE,250,0.904,0.92,1.6,0.21875,0.024,0.011,0.0514,1,5,0.1667,0.0044,0.2083
+anthropic/claude-sonnet-4,A3_rat,expert disagree + rationale,249,0.9036,0.7108,-19.28,8.055498526741105e-09,0.2892,0.2364,0.3483,60,12,0.8333,0.2667,0.5
+anthropic/claude-sonnet-4,A3_rat_gated,expert disagree + rationale + gate,249,0.9036,0.759,-14.46,1.0096127351113507e-05,0.2651,0.2141,0.3232,51,15,0.7727,0.2267,0.625
+google/gemini-2.5-flash,A0,drift (no opponent),250,0.88,0.88,0.0,1.0,0.032,0.0163,0.0619,4,4,0.5,0.0182,0.1333
+google/gemini-2.5-flash,A1,anonymous disagree,250,0.88,0.88,0.0,1.0,0.016,0.0062,0.0404,2,2,0.5,0.0091,0.0667
+google/gemini-2.5-flash,A2,low-prestige disagree,250,0.88,0.884,0.4,1.0,0.012,0.0041,0.0347,1,2,0.3333,0.0045,0.0667
+google/gemini-2.5-flash,A4,neutral-metadata disagree,250,0.88,0.876,-0.4,1.0,0.02,0.0086,0.046,3,2,0.6,0.0136,0.0667
+google/gemini-2.5-flash,A3,expert disagree,250,0.88,0.872,-0.8,0.6875,0.024,0.011,0.0514,4,2,0.6667,0.0182,0.0667
+google/gemini-2.5-flash,A3g,expert disagree + gate,250,0.88,0.888,0.8,0.7265625,0.032,0.0163,0.0619,3,5,0.375,0.0136,0.1667
+google/gemini-2.5-flash,A1_agree,anonymous AGREE,250,0.88,0.872,-0.8,0.7744140625,0.048,0.0277,0.082,7,5,0.5833,0.0318,0.1667
+google/gemini-2.5-flash,A3_agree,expert AGREE,250,0.88,0.872,-0.8,0.75390625,0.04,0.0219,0.0721,6,4,0.6,0.0273,0.1333
+google/gemini-2.5-flash,A3_rat,expert disagree + rationale,249,0.8795,0.7871,-9.24,0.0002940768754342571,0.1566,0.1167,0.2069,31,8,0.7949,0.1416,0.2667
+google/gemini-2.5-flash,A3_rat_gated,expert disagree + rationale + gate,249,0.8795,0.759,-12.05,9.24769992138863e-06,0.1847,0.1415,0.2376,38,8,0.8261,0.1735,0.2667
+openai/gpt-4o-mini,A0,drift (no opponent),250,0.92,0.892,-2.8,0.015625,0.028,0.0136,0.0567,7,0,1.0,0.0304,0.0
+openai/gpt-4o-mini,A1,anonymous disagree,250,0.92,0.884,-3.6,0.00390625,0.036,0.0191,0.067,9,0,1.0,0.0391,0.0
+openai/gpt-4o-mini,A2,low-prestige disagree,250,0.92,0.904,-1.6,0.125,0.016,0.0062,0.0404,4,0,1.0,0.0174,0.0
+openai/gpt-4o-mini,A4,neutral-metadata disagree,250,0.92,0.888,-3.2,0.0078125,0.032,0.0163,0.0619,8,0,1.0,0.0348,0.0
+openai/gpt-4o-mini,A3,expert disagree,250,0.92,0.864,-5.6,0.000518798828125,0.064,0.0398,0.1014,15,1,0.9375,0.0652,0.05
+openai/gpt-4o-mini,A3g,expert disagree + gate,250,0.92,0.88,-4.0,0.001953125,0.04,0.0219,0.0721,10,0,1.0,0.0435,0.0
+openai/gpt-4o-mini,A1_agree,anonymous AGREE,250,0.92,0.884,-3.6,0.01171875,0.044,0.0247,0.0771,10,1,0.9091,0.0435,0.05
+openai/gpt-4o-mini,A3_agree,expert AGREE,250,0.92,0.876,-4.4,0.0009765625,0.044,0.0247,0.0771,11,0,1.0,0.0478,0.0
+openai/gpt-4o-mini,A3_rat,expert disagree + rationale,249,0.9197,0.7028,-21.69,3.485851300097458e-10,0.3133,0.2588,0.3733,66,12,0.8462,0.2882,0.6
+openai/gpt-4o-mini,A3_rat_gated,expert disagree + rationale + gate,249,0.9197,0.739,-18.07,6.26942884485106e-08,0.2851,0.2327,0.3442,58,13,0.8169,0.2533,0.65

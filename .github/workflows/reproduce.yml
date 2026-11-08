@@ -1,0 +1,66 @@
+name: Reproduce camera-ready analyses
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "reproducibility/**"
+      - "docs/assets/results.json"
+      - "docs/assets/*.svg"
+      - ".github/scripts/**"
+      - ".github/workflows/reproduce.yml"
+  pull_request:
+    paths:
+      - "reproducibility/**"
+      - "docs/assets/results.json"
+      - "docs/assets/*.svg"
+      - ".github/scripts/**"
+      - ".github/workflows/reproduce.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.10"
+          cache: pip
+          cache-dependency-path: reproducibility/requirements.txt
+      - name: Install pinned dependencies
+        run: python -m pip install -r reproducibility/requirements.txt
+      - name: Verify the reconstructed benchmark inputs
+        working-directory: reproducibility
+        run: python -m unittest discover -s data-repair -p 'test_*.py' -v
+      - name: Reproduce analyses and tables
+        working-directory: reproducibility
+        run: python reproduce.py
+      - name: Regenerate figures
+        working-directory: reproducibility
+        run: python make_figures.py
+      - name: Run the paired accuracy analysis
+        working-directory: reproducibility
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+        run: |
+          python -m unittest discover -s reanalysis -p 'test_*.py' -v
+          python reanalysis/audit.py
+          python reanalysis/render.py
+      - name: Export project-page figures and data
+        run: python .github/scripts/export_page_assets.py
+      - name: Verify that regenerated outputs match the released files
+        run: |
+          git diff --exit-code -- reproducibility/results/analysis reproducibility/tables
+          git diff --exit-code -- 'reproducibility/reanalysis/outputs/*.csv' 'reproducibility/reanalysis/outputs/*.tex'
+          git diff --exit-code -- docs/assets/results.json docs/assets/transitions.svg docs/assets/selectivity.svg docs/assets/reversal.svg
+      - name: Run the experiment code offline with a stand-in API client
+        working-directory: reproducibility
+        run: |
+          python -m pip install requests==2.32.5 tqdm==4.67.1 python-dotenv==1.2.1
+          python -m unittest discover -s experiment/tests -v

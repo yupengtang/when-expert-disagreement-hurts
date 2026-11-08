@@ -1,0 +1,7 @@
+{
+  "affected_original_items": 48,
+  "affected_control_items": 16,
+  "same_document_and_hypothesis": 2,
+  "overlapping_documents": 3,
+  "note": "Overlap does not imply independent samples; versions remain separate."
+}

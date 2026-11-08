@@ -1,0 +1,2 @@
+n_questions,n_model_item_pairs,P_pp,cluster_ci_lo,cluster_ci_hi,bootstrap_samples
+249,747,4.953145917001338,2.6773761713520745,7.362784471218206,50000

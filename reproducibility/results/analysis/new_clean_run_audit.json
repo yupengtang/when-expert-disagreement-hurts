@@ -1,0 +1,93 @@
+{
+  "calls": 2937,
+  "valid_outputs": 2890,
+  "cost_usd": 17.28070235,
+  "started_utc": "2026-09-26T07:27:14.206077+00:00",
+  "finished_utc": "2026-09-26T07:37:10.907713+00:00",
+  "models": {
+    "openai/gpt-5.6-terra": {
+      "calls": 747,
+      "eligible_items": 249,
+      "valid_by_condition": {
+        "A3_rat_clean": 249,
+        "A1_rat_clean": 249,
+        "A3_rat_gated_clean": 249
+      },
+      "invalid": 0,
+      "finish_reason_counts": {
+        "stop": 747
+      },
+      "cost_usd": 2.170131500000003,
+      "prompt_tokens": 468147,
+      "completion_tokens": 102325,
+      "omitted_unsupported_parameters": [
+        "frequency_penalty",
+        "presence_penalty",
+        "temperature",
+        "top_p"
+      ]
+    },
+    "x-ai/grok-4.5": {
+      "calls": 747,
+      "eligible_items": 249,
+      "valid_by_condition": {
+        "A3_rat_clean": 249,
+        "A1_rat_clean": 249,
+        "A3_rat_gated_clean": 249
+      },
+      "invalid": 0,
+      "finish_reason_counts": {
+        "stop": 747
+      },
+      "cost_usd": 4.311387599999997,
+      "prompt_tokens": 606789,
+      "completion_tokens": 561236,
+      "omitted_unsupported_parameters": [
+        "frequency_penalty",
+        "presence_penalty"
+      ]
+    },
+    "google/gemini-3.6-flash": {
+      "calls": 699,
+      "eligible_items": 233,
+      "valid_by_condition": {
+        "A3_rat_clean": 217,
+        "A3_rat_gated_clean": 214,
+        "A1_rat_clean": 221
+      },
+      "invalid": 47,
+      "finish_reason_counts": {
+        "length": 617,
+        "stop": 82
+      },
+      "cost_usd": 1.8764332499999998,
+      "prompt_tokens": 441551,
+      "completion_tokens": 412072,
+      "omitted_unsupported_parameters": [
+        "frequency_penalty",
+        "presence_penalty"
+      ]
+    },
+    "anthropic/claude-opus-4.8": {
+      "calls": 744,
+      "eligible_items": 248,
+      "valid_by_condition": {
+        "A3_rat_gated_clean": 248,
+        "A1_rat_clean": 248,
+        "A3_rat_clean": 248
+      },
+      "invalid": 0,
+      "finish_reason_counts": {
+        "stop": 744
+      },
+      "cost_usd": 8.922749999999999,
+      "prompt_tokens": 778625,
+      "completion_tokens": 201185,
+      "omitted_unsupported_parameters": [
+        "frequency_penalty",
+        "presence_penalty",
+        "top_p"
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+model,stratum,n_paired,A1_reversal,A3_reversal,shift_pp,mcnemar_p
+Claude-Sonnet-4,Pass-1 correct,1693,0.2197,0.2333,1.36,0.05976798194970609
+Claude-Sonnet-4,Pass-1 wrong,291,0.1615,0.2612,9.97,4.176981747150421e-07
+GPT-4o-mini,Pass-1 correct,1727,0.0996,0.1691,6.95,9.191926693634371e-26
+GPT-4o-mini,Pass-1 wrong,259,0.2162,0.2819,6.56,0.00048828125
+Gemini-2.0-Flash,Pass-1 correct,1781,0.1258,0.1022,-2.36,8.980220370452065e-05
+Gemini-2.0-Flash,Pass-1 wrong,203,0.202,0.2266,2.46,0.5113757815852296

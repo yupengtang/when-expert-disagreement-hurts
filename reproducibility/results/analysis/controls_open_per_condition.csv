@@ -1,0 +1,21 @@
+model,condition,label,n,pass1_acc,final_acc,delta_acc_pp,acc_mcnemar_p,reversal,rev_lo,rev_hi,C_to_W,W_to_C,harmful_frac,R_given_correct,R_given_wrong
+meta-llama/llama-3.1-8b-instruct,A0,drift (no opponent),500,0.756,0.746,-1.0,0.6991749840078736,0.214,0.1803,0.2521,56,51,0.5234,0.1481,0.418
+meta-llama/llama-3.1-8b-instruct,A1,anonymous disagree,500,0.756,0.75,-0.6,0.8408215252256425,0.198,0.1654,0.2352,51,48,0.5152,0.1349,0.3934
+meta-llama/llama-3.1-8b-instruct,A2,low-prestige disagree,499,0.7575,0.7415,-1.6,0.4159851975073048,0.1483,0.1198,0.1822,41,33,0.5541,0.1085,0.2727
+meta-llama/llama-3.1-8b-instruct,A4,neutral-metadata disagree,500,0.756,0.732,-2.4,0.3232476471849839,0.248,0.2122,0.2877,68,56,0.5484,0.1799,0.459
+meta-llama/llama-3.1-8b-instruct,A3,expert disagree,500,0.756,0.698,-5.8,0.01723638286712925,0.278,0.2405,0.3188,84,55,0.6043,0.2222,0.4508
+meta-llama/llama-3.1-8b-instruct,A3g,expert disagree + gate,500,0.756,0.71,-4.6,0.05048700598597199,0.254,0.2178,0.2939,75,52,0.5906,0.1984,0.4262
+meta-llama/llama-3.1-8b-instruct,A1_agree,anonymous AGREE,499,0.7555,0.6593,-9.62,0.000461644404964736,0.3647,0.3237,0.4078,115,67,0.6319,0.305,0.5492
+meta-llama/llama-3.1-8b-instruct,A3_agree,expert AGREE,499,0.7575,0.6854,-7.21,0.0020237797357403877,0.2605,0.2239,0.3008,83,47,0.6385,0.2196,0.3884
+meta-llama/llama-3.1-8b-instruct,A3_rat,expert disagree + rationale,498,0.755,0.6546,-10.04,0.0010709327376608071,0.4538,0.4106,0.4977,138,88,0.6106,0.367,0.7213
+meta-llama/llama-3.1-8b-instruct,A3_rat_gated,expert disagree + rationale + gate,498,0.755,0.6687,-8.63,0.0017205727294943808,0.3635,0.3224,0.4066,112,69,0.6188,0.2979,0.5656
+meta-llama/llama-3.3-70b-instruct,A0,drift (no opponent),498,0.8936,0.8976,0.4,0.6875,0.012,0.0055,0.026,2,4,0.3333,0.0045,0.0755
+meta-llama/llama-3.3-70b-instruct,A1,anonymous disagree,497,0.8934,0.8753,-1.81,0.12207812070846558,0.0543,0.0376,0.0779,18,9,0.6667,0.0405,0.1698
+meta-llama/llama-3.3-70b-instruct,A2,low-prestige disagree,498,0.8936,0.8655,-2.81,0.024306510109454393,0.0683,0.0493,0.0939,24,10,0.7059,0.0539,0.1887
+meta-llama/llama-3.3-70b-instruct,A4,neutral-metadata disagree,496,0.8931,0.877,-1.61,0.1849333420395851,0.0565,0.0393,0.0804,18,10,0.6429,0.0406,0.1887
+meta-llama/llama-3.3-70b-instruct,A3,expert disagree,497,0.8934,0.8632,-3.02,0.023702702470473014,0.0785,0.0579,0.1055,27,12,0.6923,0.0608,0.2264
+meta-llama/llama-3.3-70b-instruct,A3g,expert disagree + gate,496,0.8931,0.871,-2.22,0.07075554598122835,0.0625,0.0444,0.0873,21,10,0.6774,0.0474,0.1887
+meta-llama/llama-3.3-70b-instruct,A1_agree,anonymous AGREE,497,0.8934,0.8934,0.0,1.0,0.0161,0.0082,0.0314,4,4,0.5,0.009,0.0755
+meta-llama/llama-3.3-70b-instruct,A3_agree,expert AGREE,498,0.8936,0.8956,0.2,1.0,0.0141,0.0068,0.0287,3,4,0.4286,0.0067,0.0755
+meta-llama/llama-3.3-70b-instruct,A3_rat,expert disagree + rationale,496,0.8931,0.6089,-28.43,2.5826314048939177e-23,0.4335,0.3905,0.4774,178,37,0.8279,0.4018,0.6981
+meta-llama/llama-3.3-70b-instruct,A3_rat_gated,expert disagree + rationale + gate,496,0.8931,0.6431,-25.0,4.943811792912208e-21,0.375,0.3335,0.4184,155,31,0.8333,0.3499,0.5849

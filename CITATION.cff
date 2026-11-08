@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository or artifact, please cite the NeurIPS 2026 paper."
+title: "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision"
+type: software
+version: 1.0.0
+date-released: 2026-11-08
+license: MIT
+repository-code: "https://github.com/yupengtang/when-expert-disagreement-hurts"
+url: "https://yupengtang.github.io/when-expert-disagreement-hurts/"
+authors:
+  - family-names: Tang
+    given-names: Yupeng
+    affiliation: Georgia Institute of Technology
+    email: yupengtang@gatech.edu
+  - family-names: Lin
+    given-names: Mingfeng
+    affiliation: Georgia Institute of Technology
+    orcid: "https://orcid.org/0000-0003-3239-7412"
+preferred-citation:
+  type: conference-paper
+  title: "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision"
+  authors:
+    - family-names: Tang
+      given-names: Yupeng
+    - family-names: Lin
+      given-names: Mingfeng
+  conference:
+    name: "Conference on Neural Information Processing Systems"
+  year: 2026

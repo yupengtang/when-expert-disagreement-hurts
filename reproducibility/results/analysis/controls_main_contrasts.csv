@@ -1,0 +1,37 @@
+model,contrast,meaning,n_paired,rate_hi,rate_lo,diff_pp,discordant_hi_only,discordant_lo_only,mcnemar_p
+anthropic/claude-sonnet-4,A3 - A1,prestige increment P (expert vs anonymous),500,0.078,0.074,0.4,10,8,0.8145294189453125
+anthropic/claude-sonnet-4,A3 - A2,expert vs low-prestige,500,0.078,0.052,2.6,15,2,0.002349853515625
+anthropic/claude-sonnet-4,A3 - A4,expert vs neutral metadata,500,0.078,0.062,1.6,13,5,0.09625244140625
+anthropic/claude-sonnet-4,A4 - A1,neutral metadata vs bare anonymous,500,0.062,0.074,-1.2,3,9,0.14599609375
+anthropic/claude-sonnet-4,A2 - A4,low-prestige vs neutral metadata,500,0.052,0.062,-1.0,2,7,0.1796875
+anthropic/claude-sonnet-4,A1 - A0,disagreement sensitivity G,500,0.074,0.05,2.4,15,3,0.007537841796875
+anthropic/claude-sonnet-4,A3_agree - A3,expert agreement vs expert disagreement,500,0.022,0.078,-5.6,0,28,7.450580596923828e-09
+anthropic/claude-sonnet-4,A3_agree - A0,expert agreement vs neutral reflection,500,0.022,0.05,-2.8,1,15,0.000518798828125
+anthropic/claude-sonnet-4,A3_agree - A1_agree,prestige effect within agreement,500,0.022,0.028,-0.6,3,6,0.5078125
+anthropic/claude-sonnet-4,A3g - A3,evidence gate on bare expert disagreement,500,0.052,0.078,-2.6,8,21,0.0241195447742939
+anthropic/claude-sonnet-4,A3_rat - A3,padded expert+rationale prompt package vs answer-only,498,0.3213,0.0783,24.3,128,7,6.717980078383356e-30
+anthropic/claude-sonnet-4,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,498,0.2671,0.3213,-5.42,6,33,1.429926123819314e-05
+google/gemini-2.5-flash,A3 - A1,prestige increment P (expert vs anonymous),500,0.046,0.048,-0.2,8,9,1.0
+google/gemini-2.5-flash,A3 - A2,expert vs low-prestige,500,0.046,0.048,-0.2,12,13,1.0
+google/gemini-2.5-flash,A3 - A4,expert vs neutral metadata,500,0.046,0.04,0.6,12,9,0.6636238098144531
+google/gemini-2.5-flash,A4 - A1,neutral metadata vs bare anonymous,500,0.04,0.048,-0.8,11,15,0.557197093963623
+google/gemini-2.5-flash,A2 - A4,low-prestige vs neutral metadata,500,0.048,0.04,0.8,15,11,0.557197093963623
+google/gemini-2.5-flash,A1 - A0,disagreement sensitivity G,500,0.048,0.068,-2.0,10,20,0.09873714670538902
+google/gemini-2.5-flash,A3_agree - A3,expert agreement vs expert disagreement,500,0.068,0.046,2.2,17,6,0.03468966484069824
+google/gemini-2.5-flash,A3_agree - A0,expert agreement vs neutral reflection,500,0.068,0.068,0.0,18,18,1.0
+google/gemini-2.5-flash,A3_agree - A1_agree,prestige effect within agreement,500,0.068,0.066,0.2,17,16,1.0
+google/gemini-2.5-flash,A3g - A3,evidence gate on bare expert disagreement,500,0.064,0.046,1.8,17,8,0.10775214433670044
+google/gemini-2.5-flash,A3_rat - A3,padded expert+rationale prompt package vs answer-only,498,0.1727,0.0462,12.65,69,6,1.1641661378765454e-14
+google/gemini-2.5-flash,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,498,0.1988,0.1727,2.61,30,17,0.07894069368148848
+openai/gpt-4o-mini,A3 - A1,prestige increment P (expert vs anonymous),500,0.074,0.03,4.4,24,2,1.049041748046875e-05
+openai/gpt-4o-mini,A3 - A2,expert vs low-prestige,500,0.074,0.014,6.0,30,0,1.862645149230957e-09
+openai/gpt-4o-mini,A3 - A4,expert vs neutral metadata,500,0.074,0.044,3.0,17,2,0.000728607177734375
+openai/gpt-4o-mini,A4 - A1,neutral metadata vs bare anonymous,500,0.044,0.03,1.4,10,3,0.09228515625
+openai/gpt-4o-mini,A2 - A4,low-prestige vs neutral metadata,500,0.014,0.044,-3.0,1,16,0.000274658203125
+openai/gpt-4o-mini,A1 - A0,disagreement sensitivity G,500,0.03,0.034,-0.4,5,7,0.7744140625
+openai/gpt-4o-mini,A3_agree - A3,expert agreement vs expert disagreement,500,0.054,0.074,-2.0,3,13,0.021270751953125
+openai/gpt-4o-mini,A3_agree - A0,expert agreement vs neutral reflection,500,0.054,0.034,2.0,12,2,0.012939453125
+openai/gpt-4o-mini,A3_agree - A1_agree,prestige effect within agreement,500,0.054,0.054,0.0,6,6,1.0
+openai/gpt-4o-mini,A3g - A3,evidence gate on bare expert disagreement,500,0.058,0.074,-1.6,4,12,0.076812744140625
+openai/gpt-4o-mini,A3_rat - A3,padded expert+rationale prompt package vs answer-only,498,0.3353,0.0743,26.1,134,4,8.552879677427434e-35
+openai/gpt-4o-mini,A3_rat_gated - A3_rat,padded gated vs ungated rationale prompt package,498,0.3012,0.3353,-3.41,8,25,0.004551384132355452

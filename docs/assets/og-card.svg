@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf9f6"/>
+  <path d="M65 68 78 62 78 89 65 95Z" fill="none" stroke="#263e36" stroke-width="1.5"/>
+  <path d="M85 62 98 68 98 95 85 89Z" fill="#a34532"/>
+  <text x="119" y="84" font-family="Arial, sans-serif" font-size="15" letter-spacing="2" fill="#263e36">NEURIPS 2026</text>
+  <text x="65" y="205" font-family="Georgia, serif" font-size="76" letter-spacing="-3" fill="#202b29">When Expert</text>
+  <text x="65" y="292" font-family="Georgia, serif" font-size="76" font-style="italic" letter-spacing="-3" fill="#a34532">Disagreement</text>
+  <text x="65" y="379" font-family="Georgia, serif" font-size="76" letter-spacing="-3" fill="#202b29">Hurts<tspan fill="#a34532">.</tspan></text>
+  <text x="68" y="441" font-family="Arial, sans-serif" font-size="22" fill="#626963">Prestige and Selectivity</text>
+  <text x="68" y="475" font-family="Arial, sans-serif" font-size="22" fill="#626963">in LLM Decision Revision</text>
+  <path d="M68 520H1132" stroke="#d9dcd4"/>
+  <text x="68" y="566" font-family="Arial, sans-serif" font-size="20" fill="#202b29">Yupeng Tang · Mingfeng Lin</text>
+  <text x="1132" y="566" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#626963">Georgia Institute of Technology</text>
+  <rect x="745" y="132" width="387" height="329" rx="5" fill="#eeefe7" stroke="#d9dcd4"/>
+  <text x="774" y="174" font-family="Arial, sans-serif" font-size="14" fill="#626963">Fixed evidence. Fixed initial answer.</text>
+  <path d="M785 198V407M785 240H815M785 309H815M785 378H815" fill="none" stroke="#a6ae9c"/>
+  <rect x="815" y="212" width="286" height="55" rx="3" fill="#faf9f6" stroke="#c4cbbd"/>
+  <rect x="815" y="281" width="286" height="55" rx="3" fill="#faf9f6" stroke="#c4cbbd"/>
+  <rect x="815" y="350" width="286" height="55" rx="3" fill="#fff3ed" stroke="#c7907e"/>
+  <text x="834" y="246" font-family="Arial, sans-serif" font-size="18" fill="#202b29">Reflection</text>
+  <text x="834" y="315" font-family="Arial, sans-serif" font-size="18" fill="#202b29">Anonymous disagreement</text>
+  <text x="834" y="384" font-family="Arial, sans-serif" font-size="18" fill="#a34532">Expert-labeled disagreement</text>
+</svg>
